@@ -9,8 +9,8 @@ on:
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
     #
-    paths:
-    - docs/**
+    # paths:
+    # - docs/**
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
