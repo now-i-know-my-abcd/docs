@@ -1,0 +1,5 @@
+# Stop the dumb ass mac files
+*.DS_Store
+
+# DO NOT track the conda env!
+env/*
