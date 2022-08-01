@@ -1,9 +1,8 @@
-# Welcome to your Jupyter Book
+# Now I Know My ABCD
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+This is a 2022 [Neurohackademy](https://neurohackademy.org/) hackathon project.
+
+Its purpose is to centralize helpful resources, bug fixes, tutorial vignettes, and other information for users of the [ABCD dataset.](https://abcdstudy.org/scientists/data-sharing/)
 
 Check out the content pages bundled with this sample book to see more.
 
