@@ -161,3 +161,6 @@ cython_debug/
 
 # Stop the dumb ass mac files
 *.DS_Store
+
+# R system files
+.Rproj.user
