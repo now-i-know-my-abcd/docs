@@ -431,6 +431,7 @@ title="Print to PDF"
 <p>You may be exploring correlations between brain statistics and behavioral/clinical correlates. With each brain statistic being calculated across many different ROIs, and with many behavioral correlates, you can generate scatterplots in <em>small multiples</em> in order to see the range of correlations as efficiently as possible.</p>
 <div class="tab-set docutils">
 <input checked="True" class="tab-input" id="tab-set--0-input--1" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--1">R</label><div class="tab-content docutils">
+<p><a class="reference external" href="https://ggobi.github.io/ggally/articles/ggpairs.html"><code class="docutils literal notranslate"><span class="pre">ggpairs()</span></code></a> from the <code class="docutils literal notranslate"><span class="pre">GGally</span></code> package will produce a flexible scatterplot matrix for exploratory visual data analysis. The plot is a <code class="docutils literal notranslate"><span class="pre">ggplot2</span></code> object under the hood, so you can modify <code class="docutils literal notranslate"><span class="pre">theme()</span></code> elements. However, <code class="docutils literal notranslate"><span class="pre">GGally</span></code> plot matrix objects don’t behave exactly like single ggplots, so the syntax for modifying other plot aesthetics is slightly different.</p>
 <div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">library</span><span class="p">(</span><span class="n">dplyr</span><span class="p">)</span>
 <span class="nf">library</span><span class="p">(</span><span class="n">GGally</span><span class="p">)</span>
 
@@ -445,6 +446,7 @@ title="Print to PDF"
 </figure>
 </div>
 <input class="tab-input" id="tab-set--0-input--2" name="tab-set--0" type="radio"><label class="tab-label" for="tab-set--0-input--2">Python</label><div class="tab-content docutils">
+<p><a class="reference external" href="https://seaborn.pydata.org/generated/seaborn.pairplot.html"><code class="docutils literal notranslate"><span class="pre">pairplot()</span></code></a> from the <code class="docutils literal notranslate"><span class="pre">seaborn</span></code> package will produce a flexible scatterplot matrix for exploratory visual data analysis. The plot is a <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> object under the hood, and can be manipulated as such.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
 
