@@ -200,35 +200,6 @@ title="Toggle navigation"
         
     </div>
     <div class="header-article__right">
-<div class="menu-dropdown menu-dropdown-launch-buttons">
-  <button class="headerbtn menu-dropdown__trigger"
-      aria-label="Launch interactive content">
-      <i class="fas fa-rocket"></i>
-  </button>
-  <div class="menu-dropdown__content">
-    <ul>
-      <li>
-        <a href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/visualization.ipynb"
-   class="headerbtn"
-   data-toggle="tooltip"
-data-placement="left"
-title="Launch on Binder"
->
-  
-
-<span class="headerbtn__icon-container">
-  
-    <img src="_static/images/logo_binder.svg">
-  </span>
-<span class="headerbtn__text-container">Binder</span>
-</a>
-
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
 <button onclick="toggleFullScreen()"
   class="headerbtn"
   data-toggle="tooltip"
@@ -296,7 +267,7 @@ title="Open an issue"
   <div class="menu-dropdown__content">
     <ul>
       <li>
-        <a href="_sources/visualization.ipynb"
+        <a href="_sources/visualization.md"
    class="headerbtn"
    data-toggle="tooltip"
 data-placement="left"
@@ -307,7 +278,7 @@ title="Download source file"
 <span class="headerbtn__icon-container">
   <i class="fas fa-file"></i>
   </span>
-<span class="headerbtn__text-container">.ipynb</span>
+<span class="headerbtn__text-container">.md</span>
 </a>
 
       </li>
@@ -355,17 +326,51 @@ title="Print to PDF"
     </div>
     <nav id="bd-toc-nav" aria-label="Page">
         <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exploratory-visualization">
-   Exploratory visualization
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Visualization tips
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#brain-behavior-correlations">
      Brain-behavior correlations
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exploratory-visualization">
+       Exploratory visualization
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#r-corrplot-code-to-go-here">
+   R corrplot code to go here
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#if-seaborn-does-a-nice-correlation-plot-put-it-here">
+   If seaborn does a nice correlation plot, put it here
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualization-on-the-brain">
+     Visualization on the brain
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#r-ggseg-code-to-go-here">
+   R ggseg code to go here
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-nilearn-code-to-go-here">
+   Python nilearn code to go here
+  </a>
  </li>
 </ul>
 
@@ -386,17 +391,51 @@ title="Print to PDF"
                         </div>
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#exploratory-visualization">
-   Exploratory visualization
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Visualization tips
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
     <a class="reference internal nav-link" href="#brain-behavior-correlations">
      Brain-behavior correlations
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h3 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#exploratory-visualization">
+       Exploratory visualization
+      </a>
+     </li>
+    </ul>
    </li>
   </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#r-corrplot-code-to-go-here">
+   R corrplot code to go here
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#if-seaborn-does-a-nice-correlation-plot-put-it-here">
+   If seaborn does a nice correlation plot, put it here
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#visualization-on-the-brain">
+     Visualization on the brain
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#r-ggseg-code-to-go-here">
+   R ggseg code to go here
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#python-nilearn-code-to-go-here">
+   Python nilearn code to go here
+  </a>
  </li>
 </ul>
 
@@ -410,13 +449,49 @@ title="Print to PDF"
                 
   <section class="tex2jax_ignore mathjax_ignore" id="visualization-tips">
 <h1>Visualization tips<a class="headerlink" href="#visualization-tips" title="Permalink to this headline">#</a></h1>
-<section id="exploratory-visualization">
-<h2>Exploratory visualization<a class="headerlink" href="#exploratory-visualization" title="Permalink to this headline">#</a></h2>
 <section id="brain-behavior-correlations">
-<h3>Brain-behavior correlations<a class="headerlink" href="#brain-behavior-correlations" title="Permalink to this headline">#</a></h3>
-<p>You may be exploring correlations between brain statistics and behavioral/clinical correlates. With each brain statistic being calculated across many different ROIs, and with many behavioral correlates, you can generate scatterplots in <em>small multiples</em> in order to see the range of correlations.</p>
+<h2>Brain-behavior correlations<a class="headerlink" href="#brain-behavior-correlations" title="Permalink to this headline">#</a></h2>
+<section id="exploratory-visualization">
+<h3>Exploratory visualization<a class="headerlink" href="#exploratory-visualization" title="Permalink to this headline">#</a></h3>
+<p>You may be exploring correlations between brain statistics and behavioral/clinical correlates. With each brain statistic being calculated across many different ROIs, and with many behavioral correlates, you can generate scatterplots in <em>small multiples</em> in order to see the range of correlations as efficiently as possible.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="7efe7f1d-fb30-45c2-8048-1ea81d43e121" name="33c1a814-36f2-4e89-a809-8de90e610aed" type="radio">
+</input><label class="sd-tab-label" for="7efe7f1d-fb30-45c2-8048-1ea81d43e121">
+R</label><div class="sd-tab-content docutils">
+</div>
+<input id="13a91b54-fce2-43ec-936c-75f6251ab4a8" name="33c1a814-36f2-4e89-a809-8de90e610aed" type="radio">
+</input><label class="sd-tab-label" for="13a91b54-fce2-43ec-936c-75f6251ab4a8">
+Python</label><div class="sd-tab-content docutils">
+</div>
+</div>
 </section>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="r-corrplot-code-to-go-here">
+<h1>R corrplot code to go here<a class="headerlink" href="#r-corrplot-code-to-go-here" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="if-seaborn-does-a-nice-correlation-plot-put-it-here">
+<h1>If seaborn does a nice correlation plot, put it here<a class="headerlink" href="#if-seaborn-does-a-nice-correlation-plot-put-it-here" title="Permalink to this headline">#</a></h1>
+<section id="visualization-on-the-brain">
+<h2>Visualization on the brain<a class="headerlink" href="#visualization-on-the-brain" title="Permalink to this headline">#</a></h2>
+<p>If you have already selected your behavioral/clinical correlate of interest, you may wish to show how it correlates with brain statistics across different ROIs. You can plot the brain-behavior correlation values as a statmap across the brain’s surface, if you have mappings to from your ROIs to surface visualizations.</p>
+<div class="sd-tab-set docutils">
+<input checked="checked" id="e7f4d3ff-caaa-4f02-988a-622151cb889a" name="1be48bf3-7f6c-4344-9140-fb478ebb7e89" type="radio">
+</input><label class="sd-tab-label" for="e7f4d3ff-caaa-4f02-988a-622151cb889a">
+R</label><div class="sd-tab-content docutils">
+</div>
+<input id="829a8ffb-aedb-4b13-aee5-df8f40eebb5c" name="1be48bf3-7f6c-4344-9140-fb478ebb7e89" type="radio">
+</input><label class="sd-tab-label" for="829a8ffb-aedb-4b13-aee5-df8f40eebb5c">
+Python</label><div class="sd-tab-content docutils">
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="r-ggseg-code-to-go-here">
+<h1>R ggseg code to go here<a class="headerlink" href="#r-ggseg-code-to-go-here" title="Permalink to this headline">#</a></h1>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="python-nilearn-code-to-go-here">
+<h1>Python nilearn code to go here<a class="headerlink" href="#python-nilearn-code-to-go-here" title="Permalink to this headline">#</a></h1>
 </section>
 
     <script type="text/x-thebe-config">
