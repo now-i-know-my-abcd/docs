@@ -10,6 +10,12 @@ logo: logo.png
 execute:
   execute_notebooks: force
 
+# Extra fancy Sphinx extensions for nicer book features
+# These need to be installed as python packages!
+sphinx:
+  extra_extensions:
+  - sphinx_inline_tabs
+
 # Define the name of the latex output file for PDF builds
 latex:
   latex_documents:
