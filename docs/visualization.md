@@ -19,6 +19,8 @@ kernelspec:
 You may be exploring correlations between brain statistics and behavioral/clinical correlates. With each brain statistic being calculated across many different ROIs, and with many behavioral correlates, you can generate scatterplots in _small multiples_ in order to see the range of correlations as efficiently as possible.
 
 ````{tab} R
+[`ggpairs()`](https://ggobi.github.io/ggally/articles/ggpairs.html) from the `GGally` package will produce a flexible scatterplot matrix for exploratory visual data analysis. The plot is a `ggplot2` object under the hood, so you can modify `theme()` elements. However, `GGally` plot matrix objects don't behave exactly like single ggplots, so the syntax for modifying other plot aesthetics is slightly different.
+
 ```{code-block} r
 library(dplyr)
 library(GGally)
@@ -32,6 +34,7 @@ data %>%
 ```
 ````
 ````{tab} Python
+[`pairplot()`](https://seaborn.pydata.org/generated/seaborn.pairplot.html) from the `seaborn` package will produce a flexible scatterplot matrix for exploratory visual data analysis. The plot is a `matplotlib` object under the hood, and can be manipulated as such.
 ```{code-block} python
 import pandas as pd
 import seaborn as sns
