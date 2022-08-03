@@ -8,6 +8,3 @@ chapters:
 - file: tutorials
 - file: bug-reference
 - file: contributing
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
