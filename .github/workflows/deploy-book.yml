@@ -11,6 +11,7 @@ on:
     #
     paths:
     - docs/**
+    - .github/workflows/deploy-book.yml
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
@@ -29,7 +30,7 @@ jobs:
     - name: Install dependencies not with conda cuz we suck
       run: |
         python -m pip install --upgrade pip
-        pip install jupyter-book
+        pip install jupyter-book sphinx-inline-tabs
 
     # Build the book
     - name: Build the book
