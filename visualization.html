@@ -54,8 +54,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tutorials" href="tutorials.html" />
-    <link rel="prev" title="Resources" href="resources.html" />
+    <link rel="next" title="Big book of bugs" href="bug-reference.html" />
+    <link rel="prev" title="How to contribute" href="contributing.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -115,7 +115,12 @@ const thebe_selector_output = ".output, .cell_output"
                 </a>
             </li>
         </ul>
-        <ul class="current nav bd-sidenav">
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  General info
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="user-manual.html">
    User Manual
@@ -136,14 +141,21 @@ const thebe_selector_output = ".output, .cell_output"
    Resources
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contributing.html">
+   How to contribute
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Methods tutorials
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
    Visualization tips
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="tutorials.html">
-   Tutorials
   </a>
  </li>
  <li class="toctree-l1">
@@ -151,11 +163,13 @@ const thebe_selector_output = ".output, .cell_output"
    Big book of bugs
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="contributing.html">
-   How to contribute
-  </a>
- </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  ABCD on Twitter
+ </span>
+</p>
+<ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="recent_tweets.html">
    Recent ABCD Relevant Tweets
@@ -520,7 +534,7 @@ title="Print to PDF"
 </figure>
 </div>
 <input class="tab-input" id="tab-set--1-input--2" name="tab-set--1" type="radio"><label class="tab-label" for="tab-set--1-input--2">Python</label><div class="tab-content docutils">
-<p>The <code class="docutils literal notranslate"><span class="pre">nilearn.plotting</span></code> library uses <code class="docutils literal notranslate"><span class="pre">plotly</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> under the hood to plot snapshots of 3D cortical surface visualizations. <code class="docutils literal notranslate"><span class="pre">nilearn.datasets</span></code> comes with a number of atlases; however, the Gordon atlas has not yet been implemented natively. You can either import the atlas yourself as a <code class="docutils literal notranslate"><span class="pre">numpy</span></code> array of ROI codes (one per each surface vertex) or use an alternative atlas that has already been implemented. The example below plots simulated ROI-wise statistics for each parcel in the <a class="reference external" href="https://nilearn.github.io/stable/modules/generated/nilearn.datasets.fetch_atlas_surf_destrieux.html?highlight=destrieux#nilearn.datasets.fetch_atlas_surf_destrieux">Destrieux surface atlas</a>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">nilearn.plotting</span></code> library uses <code class="docutils literal notranslate"><span class="pre">plotly</span></code> and <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code> under the hood to plot snapshots of 3D cortical surface visualizations. <code class="docutils literal notranslate"><span class="pre">nilearn.datasets</span></code> comes with a number of atlases; however, the Gordon atlas has not yet been implemented natively <a class="footnote-reference brackets" href="#footnote1" id="id1">1</a>. You can either import the atlas yourself as a <code class="docutils literal notranslate"><span class="pre">numpy</span></code> array of ROI codes (one per each surface vertex) or use an alternative atlas that has already been implemented. The example below plots simulated ROI-wise statistics for each parcel in the <a class="reference external" href="https://nilearn.github.io/stable/modules/generated/nilearn.datasets.fetch_atlas_surf_destrieux.html?highlight=destrieux#nilearn.datasets.fetch_atlas_surf_destrieux">Destrieux surface atlas</a>.</p>
 <p>Because <code class="docutils literal notranslate"><span class="pre">nilearn.plotting</span></code> uses <code class="docutils literal notranslate"><span class="pre">plotly</span></code> under the hood to flexibly snapshot the underlying brain model each time a plot is called, it supports all six canonical hemisphere views: medial, lateral, dorsal, ventral, anterior, and posterior. However, it can only render one hemisphere/view at a time.</p>
 <p><code class="docutils literal notranslate"><span class="pre">nilearn.plotting</span></code> surface plots are optimized for vertex-wise visualization. <code class="docutils literal notranslate"><span class="pre">nilearn</span></code> stores atlases as 1D arrays with one row per vertex. Each row’s value is that ROI’s integer code, and all indices with the same code value thus belong to the same ROI. You can plot any array of stat values as long as the array has the same dimensions as the atlas. If you have a list or <code class="docutils literal notranslate"><span class="pre">pandas</span></code> dataframe column of one stat values for each atlas ROI label, you will need to iterate through the <em>atlas array of vertices,</em> fetching the relevant stat value for each vertex.</p>
 <p>Once you have that, you can plot stat values on the surface! Use <a class="reference external" href="https://nilearn.github.io/stable/modules/generated/nilearn.plotting.plot_surf_stat_map.html#nilearn.plotting.plot_surf_stat_map"><code class="docutils literal notranslate"><span class="pre">plot_surf_stat_map()</span></code></a>, which will vary color with your statistic of interest if it’s fed into the <code class="docutils literal notranslate"><span class="pre">stat_map</span></code> argument. While it sounds like what you want, don’t use <code class="docutils literal notranslate"><span class="pre">plot_surf_roi()</span></code> for this because that function is designed for plotting arbitrary categorical colors to ROI definition atlases.</p>
@@ -566,6 +580,12 @@ title="Print to PDF"
 </figure>
 </div>
 </div>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="footnote1"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p>The Gordon atlas has been requested for addition into <code class="docutils literal notranslate"><span class="pre">nilearn.datasets</span></code>, but has not yet been implemented pending larger decisions for how to add new atlases into the library. <a class="reference external" href="https://github.com/nilearn/nilearn/issues/1167">https://github.com/nilearn/nilearn/issues/1167</a></p>
+</dd>
+</dl>
 </section>
 </section>
 </section>
@@ -597,17 +617,17 @@ title="Print to PDF"
                 
     <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-    <a class='left-prev' id="prev-link" href="resources.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="contributing.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Resources</p>
+            <p class="prev-next-title">How to contribute</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="tutorials.html" title="next page">
+    <a class='right-next' id="next-link" href="bug-reference.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Tutorials</p>
+        <p class="prev-next-title">Big book of bugs</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
