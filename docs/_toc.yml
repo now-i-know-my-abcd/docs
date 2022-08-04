@@ -12,3 +12,6 @@ chapters:
 - file: tutorials
 - file: bug-reference
 - file: contributing
+- file: recent_tweets
+- file: old_tweets
+
