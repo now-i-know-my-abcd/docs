@@ -79,7 +79,7 @@ gordon %>%
 ```
 ````
 ````{tab} Python
-The `nilearn.plotting` library uses `plotly` and `matplotlib` under the hood to plot snapshots of 3D cortical surface visualizations. `nilearn.datasets` comes with a number of atlases; however, the Gordon atlas has not yet been implemented natively. You can either import the atlas yourself as a `numpy` array of ROI codes (one per each surface vertex) or use an alternative atlas that has already been implemented. The example below plots simulated ROI-wise statistics for each parcel in the [Destrieux surface atlas](https://nilearn.github.io/stable/modules/generated/nilearn.datasets.fetch_atlas_surf_destrieux.html?highlight=destrieux#nilearn.datasets.fetch_atlas_surf_destrieux).
+The `nilearn.plotting` library uses `plotly` and `matplotlib` under the hood to plot snapshots of 3D cortical surface visualizations. `nilearn.datasets` comes with a number of atlases; however, the Gordon atlas has not yet been implemented natively [^footnote1]. You can either import the atlas yourself as a `numpy` array of ROI codes (one per each surface vertex) or use an alternative atlas that has already been implemented. The example below plots simulated ROI-wise statistics for each parcel in the [Destrieux surface atlas](https://nilearn.github.io/stable/modules/generated/nilearn.datasets.fetch_atlas_surf_destrieux.html?highlight=destrieux#nilearn.datasets.fetch_atlas_surf_destrieux).
 
 Because `nilearn.plotting` uses `plotly` under the hood to flexibly snapshot the underlying brain model each time a plot is called, it supports all six canonical hemisphere views: medial, lateral, dorsal, ventral, anterior, and posterior. However, it can only render one hemisphere/view at a time.
 
@@ -127,3 +127,5 @@ plotting.plot_surf_stat_map(fsaverage['infl_left'],
 ```{figure} figs/py_nilearn_leftlateral.png
 ```
 ````
+
+[^footnote1]: The Gordon atlas has been requested for addition into `nilearn.datasets`, but has not yet been implemented pending larger decisions for how to add new atlases into the library. https://github.com/nilearn/nilearn/issues/1167
