@@ -11,7 +11,7 @@ For more details about the discussion board, see below, as well as the pinned po
 
 ### Data Use Certification
 
-Access to ABCD data is limited to those with an active Data Use Certification (DUC). In accordance with this, do not post any data or restricted information from ABCD in this forum. For the full text of the DUC, see [.......].
+Access to ABCD data is limited to those with an active Data Use Certification (DUC). In accordance with this, do not post any data or restricted information from ABCD in this forum. For the full text of the DUC, see [full text ](https://s3.amazonaws.com/nda.nih.gov/Documents/NDA+Data+Access+Request+DUC+FINAL.pdf) 
 
 ### General guideline/courtesy, comment guidelines
 
