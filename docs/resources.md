@@ -3,7 +3,9 @@
 Many of the resources linked here were collected during the 2021 Modeling Developmental Change ABCD Workshop (R25MH125545).  
 
 ### ABCD-Related Workshops and Tutorials
+
 **ABCD Workshops (2019, 2021)**
+
 https://abcdworkshop.github.io/ 
 https://abcdworkshop.github.io/resources/ 
 https://abcdworkshop.github.io/past-workshops/2019/ 
@@ -11,6 +13,7 @@ https://abcdworkshop.github.io/past-workshops/2019/resources/
 Description: Slides, tutorials, and recorded talks from the 2019 and 2021 ABCD Workshops. Resources on reproducible science, modeling, puberty, and adolescent mental health! Recorded talks, slides, and code tutorials. 
 
 **ABCD Repronim**
+
 https://www.abcd-repronim.org/materials.html 
 https://neurostars.org/c/abcd-repronim/232 
 Description: Lectures, resources, and data exercises from the ABCD-ReproNim workshops. The ABCD-ReproNim Neurostars page contains some Q&A about working with the data.
@@ -22,19 +25,28 @@ h/t to Victoria Guazzelli Williamson for curating the list of resources below, g
 ### Statistics
 
 **Statistical Control**
+
 - Statistical Control Requires Causal Justification https://osf.io/38mxq/
+
 **Meaningful Effects** 
+
 - Workshop: https://apps1.seiservices.com/meaningfuleffects/ 
   - https://apps1.seiservices.com/meaningfuleffects/09022020_MeaningfulEffects_Summary.pdf 
 - Meaningful Associations in the Adolescent Brain Cognitive Development Study: https://www.biorxiv.org/content/10.1101/2020.09.01.276451v2 
 - Funder & Ozer 2019 https://journals.sagepub.com/doi/full/10.1177/2515245919847202 
+
 **Validity**
+
 - Borsboom, Mellenbergh, Van Heerden - 2004 - The concept of validity  https://doi.org/10.1037/0033-295X.111.4.1061 
 - Construct Validation in Social and Personality Research: Current Practice and Recommendations https://doi.org/10.1177/1948550617693063 
+
 **Latent variables**
+
 - Worse Than Measurement Error: Consequences of Inappropriate Latent Variable Measurement Models 10.1037/met0000220
 - Latent Change Score models https://www.sciencedirect.com/science/article/pii/S187892931730021X
+
 **Stratifying/splitting samples**
+
 - Data splitting tutorial https://topepo.github.io/caret/data-splitting.html 
 - Stratified sampling tutorial: https://towardsdatascience.com/stratified-sampling-and-how-to-perform-it-in-r-8b753efde1ef 
 
@@ -46,16 +58,21 @@ h/t to Victoria Guazzelli Williamson for curating the list of resources below, g
 ### Open Science Tools
 
 **Preregistration**
+
 - Instructions on creating blinded preregistrations: https://help.osf.io/hc/en-us/articles/360042097853-Create-a-View-only-Link-for-a-Registration 
 - Examples
   - ABCD example from Monash University: https://osf.io/cjnh4 
   - Search for ABCD at OSF.io
+  
 **Reproducibility**
+
 - ReproducibiliTea Group! https://reproducibilitea.org/
 - ReproducibiliTea podcast https://soundcloud.com/reproducibilitea
 - Great YouTube channel which discusses really good topic on reproducible and open science practices https://www.youtube.com/c/RIOTScienceClub/videos
 - Reasons to work reproducibly: https://www.youtube.com/watch?v=yVT07Sukv9Q
+
 **ABCD Dataset and Data Resources**
+
 - Instructions for accessing ABCD data from the cloud: https://nda.nih.gov/training/modules/cloud.html 
 - NDA Tools https://github.com/NDAR/nda-tools
 - NDA S3 Downloader: https://github.com/ABCD-STUDY/nda-abcd-s3-downloader 
@@ -69,24 +86,33 @@ h/t to Victoria Guazzelli Williamson for curating the list of resources below, g
 - ABCD workshop tutorials: https://abcdworkshop.github.io/bookdown/introduction.html 
 - fMRIprep overview: https://www.nature.com/articles/s41592-018-0235-4 
 - Running fMRIprep on a server with no internet: https://fmriprep.org/en/stable/faq.html#i-m-running-fmriprep-via-singularity-containers-how-can-i-troubleshoot-problems 
+
 **Miscellaneous** 
+
 - Weston et al., https://pubmed.ncbi.nlm.nih.gov/32190814/ 
 - The case for formal methodology in scientific reform https://royalsocietypublishing.org/doi/10.1098/rsos.200805 
 
 ### Adolescence
 
 **Mental Health & Psychopathology**
+
 - A focus on adolescence to reduce neurological, mental health and substance-use disability: https://www.nature.com/articles/nature16030
 - https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)61611-6/fulltext 
 - https://www.sciencedirect.com/science/article/pii/S014976340700053X 
 - The ABCD study: understanding the development of risk for mental and physical health outcomes: https://www.nature.com/articles/s41386-020-0736-6 
+
 **Puberty**
+
 - Multi-method assessment of pubertal timing and associations with internalizing psychopathology in early adolescent girls https://psyarxiv.com/p5vfb 
 - A Researcher’s Guide to the Measurement and Modeling of Puberty in the ABCD Study® at Baseline https://www.frontiersin.org/articles/10.3389/fendo.2021.608575/full?&utm_source=Email_to_authors_&utm_medium=Email&utm_content=T1_11.5e1_author&utm_campaign=Email_publication&field=&journalName=Frontiers_in_Endocrinology&id=608575 
+
 **Brain**
+
 - Baseline brain function in the preadolescents of the ABCD Study https://www.nature.com/articles/s41593-021-00867-9 
 - Opportunities for increased reproducibility and replicability of developmental neuroimaging: https://www.sciencedirect.com/science/article/pii/S1878929320301511
+
 **Development/Longitudinal modeling**
+
 - Longitudinal modeling in developmental neuroimaging research: Common
 challenges, and solutions from developmental psychology: https://www.sciencedirect.com/science/article/pii/S1878929317300300 
 - Improving practices and inferences in developmental cognitive neuroscience https://www.sciencedirect.com/science/article/pii/S1878929320300554
@@ -110,6 +136,7 @@ challenges, and solutions from developmental psychology: https://www.sciencedire
 ### Model Selection
 
 - Overview paper (suggested by Sara Weston) on cross-lagged-panel-models (different types): https://psycnet.apa.org/fulltext/2020-54836-001.pdf 
+
 - **ri-CLPM**
   - Papers to understand: 
     - Hamaker, E. L., Kuiper, R. M., & Grasman, R. P. P. P. (2015). A critique of the cross-lagged panel model. Psychological Methods, 20(1), 102–116. https://doi.org/10.1037/a0038889
