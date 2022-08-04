@@ -1,43 +1,25 @@
 # Recent ABCD Relevant Tweets
 
-#### See what ABCD researchers have been up to in the recent weeks!
+##### See what ABCD researchers have been up to in the recent weeks!
 
-#### Scroll through the feeds below to find recent papers, opportunities, announcements, and troubleshooting re: ABCD!
+##### Scroll through the feeds below to find recent papers, opportunities, announcements, and troubleshooting re: ABCD!
 
-<script src="https://raw.githubusercontent.com/55sketch/simple-rss/master/simple-rss.js"></script>
+##### "#ABCDStudy"
 
-#### "#ABCDStudy"
+<rssapp-wall id="R07fs0IBuSq2MqY0"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 
-<div
-    data-rss-feed="https://rss.app/feeds/R07fs0IBuSq2MqY0.xml"
-    data-rss-link-titles="false"
-    data-rss-title-wrapper="h3"
-    data-rss-max="5">
-</div>
+##### "Adolescent Brain Cognitive Development (ABCD) study"
 
-#### "Adolescent Brain Cognitive Development (ABCD) study"
+<rssapp-wall id="BG5myTtbYTV1Pjuj"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 
-<div
-    data-rss-feed="https://rss.app/feeds/BG5myTtbYTV1Pjuj.xml"
-    data-rss-link-titles="false"
-    data-rss-title-wrapper="h3"
-    data-rss-max="5">
-</div>
+##### "ABCD data"
 
-#### "ABCD data"
+<rssapp-wall id="rKKAO1LVsUeBO9aY"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 
-<div
-    data-rss-feed="https://rss.app/feeds/rKKAO1LVsUeBO9aY.xml"
-    data-rss-link-titles="false"
-    data-rss-title-wrapper="h3"
-    data-rss-max="5">
-</div>
+##### "ABCD study site"
 
-#### "ABCD study site"
+<rssapp-wall id="NfapvGUH977zEsWK"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
 
-<div
-    data-rss-feed="https://rss.app/feeds/NfapvGUH977zEsWK.xml"
-    data-rss-link-titles="false"
-    data-rss-title-wrapper="h3"
-    data-rss-max="5">
-</div>
+##### "ABCD study"
+
+<rssapp-wall id="mdjYNM4GQTLKJFu5"></rssapp-wall><script src="https://widget.rss.app/v1/wall.js" type="text/javascript" async></script>
