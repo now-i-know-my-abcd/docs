@@ -10,12 +10,14 @@ https://abcdworkshop.github.io/
 https://abcdworkshop.github.io/resources/ 
 https://abcdworkshop.github.io/past-workshops/2019/ 
 https://abcdworkshop.github.io/past-workshops/2019/resources/ 
+
 Description: Slides, tutorials, and recorded talks from the 2019 and 2021 ABCD Workshops. Resources on reproducible science, modeling, puberty, and adolescent mental health! Recorded talks, slides, and code tutorials. 
 
 **ABCD Repronim**
 
 https://www.abcd-repronim.org/materials.html 
 https://neurostars.org/c/abcd-repronim/232 
+
 Description: Lectures, resources, and data exercises from the ABCD-ReproNim workshops. The ABCD-ReproNim Neurostars page contains some Q&A about working with the data.
 
 
