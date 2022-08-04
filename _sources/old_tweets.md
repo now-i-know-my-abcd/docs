@@ -27,8 +27,7 @@ To view relevant tweets from the past week, please visit the following [link](ht
 
 <div>
   <iframe
-  width="100%"
-  height="100%"
+  style = "width:100%; height:500px; overflow:auto;""
   src="https://docs.google.com/spreadsheets/d/1MWnxlzIEpcCQTe3aW3cfmuwJhDoS8MPRUbJ_71n2A94/edit?usp=sharing">
   </iframe>
 </div>
