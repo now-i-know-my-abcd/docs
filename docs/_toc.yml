@@ -16,6 +16,7 @@ parts:
     - file: visualization
     - file: bug-reference
   - caption: ABCD on Twitter
+    chapters:
     - file: recent_tweets
     - file: old_tweets
 
