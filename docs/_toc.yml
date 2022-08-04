@@ -4,6 +4,9 @@
 format: jb-book
 root: intro
 chapters:
+- file: starting
+- file: discussion
+- file: resources
 - file: visualization
 - file: tutorials
 - file: bug-reference
