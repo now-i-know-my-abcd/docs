@@ -12,5 +12,7 @@ For an overview of the DUC and responsible data use guidelines, see: https://abc
 [Full text of the DUC](https://s3.amazonaws.com/nda.nih.gov/Documents/NDA+Data+Access+Request+DUC+FINAL.pdf) 
 
 Creating NDA Studies:
+
 [Tutorial](https://nda.nih.gov/training/module?trainingModuleId=training.study&slideId=slide.study.intro) 
+
 [Steps](https://nda.nih.gov/get/manuscript-preparation.html) 
