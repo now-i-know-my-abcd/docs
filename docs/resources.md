@@ -1,28 +1,33 @@
 # Resources
 
-Many of the resources linked here were collected during the 2021 Modeling Developmental Change ABCD Workshop (R25MH125545).  
+Many of the resources linked here were collected during the [2021 Modeling Developmental Change ABCD Workshop](abcdworkshop.github.io) (R25MH125545).  
 
 ### ABCD-Related Workshops and Tutorials
 
 **ABCD Workshops (2019, 2021)**
 
-https://abcdworkshop.github.io/ 
-https://abcdworkshop.github.io/resources/ 
-https://abcdworkshop.github.io/past-workshops/2019/ 
-https://abcdworkshop.github.io/past-workshops/2019/resources/ 
+[2021 - Modeling Developmental Change Homepage](https://abcdworkshop.github.io/)
 
-Description: Slides, tutorials, and recorded talks from the 2019 and 2021 ABCD Workshops. Resources on reproducible science, modeling, puberty, and adolescent mental health! Recorded talks, slides, and code tutorials. 
+[2021 - Modeling Developmental Change - Resources, Slides, Recorded Talks](https://abcdworkshop.github.io/resources/)
 
-**ABCD Repronim**
+[2019 - Brain Development and Mental Health Homepage](https://abcdworkshop.github.io/past-workshops/2019/)
 
-https://www.abcd-repronim.org/materials.html 
-https://neurostars.org/c/abcd-repronim/232 
+[2019 - Brain Development and Mental Health Resources, Slides, Recorded Talks](https://abcdworkshop.github.io/past-workshops/2019/resources/) 
+
+Description: Slides, tutorials, and recorded talks from the 2019 and 2021 ABCD Workshops. Resources on reproducible science, working with ABCD, modeling, puberty, and adolescent mental health! Recorded talks, slides, and code tutorials. 
+
+**ABCD ReproNim**
+
+[ABCD ReproNim Workshop Materials](https://www.abcd-repronim.org/materials.html)
+
+[ABCD ReproNim Neurostars Forum](https://neurostars.org/c/abcd-repronim/232)
 
 Description: Lectures, resources, and data exercises from the ABCD-ReproNim workshops. The ABCD-ReproNim Neurostars page contains some Q&A about working with the data.
 
 
+## Other Resources
 
-h/t to Victoria Guazzelli Williamson for curating the list of resources below, gathered during the MDC ABCD Workshop. 
+*h/t to Victoria Guazzelli Williamson for curating the list of resources below, gathered during the MDC ABCD Workshop.* 
 
 ### Statistics
 
