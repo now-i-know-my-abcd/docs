@@ -3,15 +3,20 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: user-manual
-- file: starting
-- file: discussion
-- file: resources
-- file: visualization
-- file: tutorials
-- file: bug-reference
-- file: contributing
-- file: recent_tweets
-- file: old_tweets
+parts:
+  - caption: General info
+    chapters:
+    - file: user-manual
+    - file: starting
+    - file: discussion
+    - file: resources
+    - file: contributing
+  - caption: Methods tutorials
+    chapters:
+    - file: visualization
+    - file: bug-reference
+  - caption: ABCD on Twitter
+    chapters:
+    - file: recent_tweets
+    - file: old_tweets
 
