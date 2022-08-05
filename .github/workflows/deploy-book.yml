@@ -33,9 +33,15 @@ jobs:
         pip install jupyter-book sphinx-inline-tabs nilearn seaborn
     
     # Run the code tutorial scripts
+    # must cd into the folder bc the paths in the scripts
+    # are relative from the script path
+    # and python is sensitive to the dir from which
+    # the script is called
     - name: Run externalized py tutorial scripts
       run: |
-        for f in ../../python/*.py; do python "$f"; done
+        cd python/docs-examples
+        for f in *.py; do python "$f"; done
+        cd ../..
 
     # Build the book
     - name: Build the book
