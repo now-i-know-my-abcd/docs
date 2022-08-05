@@ -128,6 +128,8 @@ ENV/
 env.bak/
 venv.bak/
 renv/*
+# but not renv/activate.R
+!renv/activate.R
 
 # Spyder project settings
 .spyderproject
