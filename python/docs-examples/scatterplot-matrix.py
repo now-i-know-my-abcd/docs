@@ -5,6 +5,8 @@ import seaborn as sns
 import random
 from matplotlib.pyplot import savefig
 
+random.seed(17)
+
 f = open("../../data/abcd_smri_colnames.txt", "r")
 abcd_smri_colnames = f.readlines()
 abcd_smri_colnames = [colname.strip() for colname in abcd_smri_colnames]

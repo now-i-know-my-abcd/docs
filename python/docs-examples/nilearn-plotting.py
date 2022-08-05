@@ -7,6 +7,8 @@ import random
 from matplotlib import pyplot as plt
 from seaborn import diverging_palette
 
+random.seed(17)
+
 destrieux_atlas = datasets.fetch_atlas_surf_destrieux()
 
 # The parcellation is already loaded into memory

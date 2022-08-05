@@ -2,6 +2,8 @@ library(tidyverse)
 library(ggseg)
 library(ggsegGordon)
 
+set.seed(17)
+
 r_ggseg_brain <- gordon %>% 
   as_tibble() %>% 
   # So stats don't get generated for those midline panels of callosal nothingness

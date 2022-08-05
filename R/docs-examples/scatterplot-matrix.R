@@ -1,6 +1,8 @@
 library(tidyverse)
 library(GGally)
 
+set.seed(17)
+
 abcd_smri_colnames <- read_rds(here::here("data", "abcd_smri_colnames.rds")) %>% 
   .[1:5]
 
