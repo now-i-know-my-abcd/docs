@@ -13,21 +13,33 @@ on:
     - docs/**
     - .github/workflows/deploy-book.yml
 
-# This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
+  # This job installs dependencies, builds the book, and pushes it to `gh-pages
   deploy-book:
     runs-on: ubuntu-latest
+    env:
+      R_COMPILE_AND_INSTALL_PACKAGES: never
 
     steps:
     - uses: actions/checkout@v2
 
-    # Install dependencies
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+    
+    - name: Install R dependencies with renv
+      uses: r-lib/actions/setup-renv@v2
+
+    - name: Run externalized R tutorial mega-script
+      run: source("R/run-all.R")
+      shell: Rscript {0}
+
+    # Install py dependencies
     - name: Set up Python 3.10
       uses: actions/setup-python@v2
       with:
         python-version: 3.10.5
 
-    - name: Install dependencies not with conda cuz we suck
+    - name: Install py dependencies not with conda cuz we suck
       run: |
         python -m pip install --upgrade pip
         pip install jupyter-book sphinx-inline-tabs nilearn seaborn
