@@ -8,7 +8,8 @@ parts:
     chapters:
     - file: user-manual
     - file: starting
-    - file: discussion
+    - url: https://github.com/now-i-know-my-abcd/docs/discussions
+      title: ABCD Discussion Board
     - file: resources
     - file: contributing
   - caption: Methods tutorials
