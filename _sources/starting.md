@@ -16,3 +16,6 @@ For information on creating NDA studies:
 - [Tutorial](https://nda.nih.gov/training/module?trainingModuleId=training.study&slideId=slide.study.intro)
 
 - [Steps](https://nda.nih.gov/get/manuscript-preparation.html)
+
+For information on how to download ABCD data, see: [How to Download ABCD Data.pdf](https://github.com/now-i-know-my-abcd/docs/files/9284755/How.to.Download.ABCD.Data.pdf)
+
