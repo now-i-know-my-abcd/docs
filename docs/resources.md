@@ -24,6 +24,9 @@ Description: Slides, tutorials, and recorded talks from the 2019 and 2021 ABCD W
 
 Description: Lectures, resources, and data exercises from the ABCD-ReproNim workshops. The ABCD-ReproNim Neurostars page contains some Q&A about working with the data.
 
+**Publication** 
+
+Following the MDC ABCD 2021 workshop, several attendees came together and published this manuscript which is a practical guide for researchers using ABCD dataset and other large longitudinal datasets: [PracticalGuide.pdf](https://github.com/now-i-know-my-abcd/docs/files/9310731/PracticalGuide.pdf)
 
 ## Other Resources
 
