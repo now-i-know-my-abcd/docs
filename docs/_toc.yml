@@ -15,6 +15,7 @@ parts:
   - caption: Methods tutorials
     chapters:
     - file: visualization
+    - file: counting-data
     - file: bug-reference
   - caption: ABCD on Twitter
     chapters:
