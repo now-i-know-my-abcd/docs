@@ -168,3 +168,6 @@ cython_debug/
 # R system files
 .Rproj.user
 .Rhistory
+
+# Local data that should not by synced
+ignore/*

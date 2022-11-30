@@ -12,11 +12,13 @@ The table of contents is declared in `_toc.yml` in the project root folder. Add 
 
 Order matters! Add the new line where you want the resulting chapter to end up.
 
-## Rendering the book site
+## Rendering the book site locally
 
-Currently, only Monica has the `jupyter-book` package installed. However, this repo comes with a conda `environment.yml` file that you can (theoretically) use to install all relevant packages.
+The website is currently equipped with a GitHub Actions workflow that renders the web-hosted version of the site _every time a change is pushed on the `main` branch._ You do not need to have `jupyter-book` installed on your local machine in order to get the live website to update! :tada: 
 
-when you have JupyterBook set up, the following terminal command will render the book when run from the project root folder:
+However, you _do_ need to have it installed if you want to preview website edits before pushing. This repo comes with a conda `environment.yml` file that you can (theoretically) use to install all relevant packages. In Monica's experience, `environment.yml` files can be picky and sometimes overly OS-specific, so please contact Monica if you have issues recreating the Python dependencies.
+
+When you have JupyterBook set up, the following terminal command will render the book locally when run from the project root folder:
 
 ```bash
 jupyter-book build docs/
