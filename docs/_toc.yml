@@ -15,7 +15,10 @@ parts:
   - caption: Methods tutorials
     chapters:
     - file: visualization
-    - file: counting-data
+    - file: counting-data/index
+      sections:
+      - file: counting-data/r-new
+      - file: counting-data/python
     - file: bug-reference
   - caption: ABCD on Twitter
     chapters:
