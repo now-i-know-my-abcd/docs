@@ -17,7 +17,7 @@ parts:
     - file: visualization
     - file: counting-data/index
       sections:
-      - file: counting-data/r-new
+      - file: counting-data/r
       - file: counting-data/python
     - file: bug-reference
   - caption: ABCD on Twitter

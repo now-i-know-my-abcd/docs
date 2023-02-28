@@ -2,8 +2,8 @@
 jupyter:
   kernelspec:
     display_name: R
-    language: r
-    name: ir2
+    language: R
+    name: ir
 ---
 
 ## R
@@ -23,16 +23,14 @@ Counting simultaneously by `timepoint` and by `is.na(variable)` will return a lo
 
 This logic _assumes the data have one row per participant_ for a given timepoint.
 
-WARNING: The code below hasn't been tested!
-
-```{r}
+```{r, message=FALSE, warning=FALSE}
 library(dplyr)
 library(readr)
 
 data_path <- here::here("ignore", "abcd_v4", "abcd_mri01.txt")
 data_colnames <- names(read_tsv(data_path, n_max = 0))
-data_descrips <- read_tsv(data_path, n_max = 1)
-data <- read_tsv(data_path, col_names = data_colnames, skip = 2) %>%
+data_descrips <- read_tsv(data_path, n_max = 1, show_col_types = FALSE)
+data <- read_tsv(data_path, col_names = data_colnames, skip = 2, show_col_types = FALSE) %>%
     select(src_subject_id, eventname) %>%
     # Hide the actual subject IDs for the purpose of this tutorial output
     mutate(src_subject_id = forcats::fct_anon(factor(src_subject_id)))
