@@ -11,9 +11,9 @@ parts:
     - url: https://github.com/now-i-know-my-abcd/docs/discussions
       title: ABCD Discussion Board
     - file: contributing
-  - caption: ABCD Resources
+  - caption: Resources
     chapters:
-    - file: resources/workshops
+    - file: resources/abcd-specific
     - file: resources/computing
     - file: resources/statistics
     - file: resources/science
