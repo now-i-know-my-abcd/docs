@@ -1,6 +1,10 @@
 ## ABCD-specific resources
 
-### ABCD Dataset and Data Resources
+### ABCD publications
+
+- Official list of ABCD-related publications: https://abcdstudy.org/publications/
+
+### ABCD dataset and data resources
 
 - Instructions for accessing ABCD data from the cloud: https://nda.nih.gov/training/modules/cloud.html 
 - NDA Tools https://github.com/NDAR/nda-tools
