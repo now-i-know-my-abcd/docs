@@ -1,6 +1,18 @@
-# README
+## Issues (suggest and request updates)
+
+If you would like to suggest an update or addition to the Now I Know My ABCD documentation site, without writing the code yourself, first navigate to the website page you'd like to suggest a change to. Then, open a GitHub issue using the "open issue" link in the GitHub drop-down menu at the top of the page. Include a comment with your issue describing your suggested change, and a site moderator will review your issue and update the website.
+
+If you have more general ABCD questions, please visit the Discussion Board! Opening a GitHub issue is best suited to targeted content update requests and suggestions for individual pages.
+
+## Forks and pull requests (code it yourself)
+
+The first step to contributing to the Now I Know My ABCD docs is to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks) the GitHub repository containing the source code. In your local fork, you can write new website content or edit existing content at your own pace without affecting the main site.
+
+Once you're ready, open a [pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests). A site moderator will review your pull request and work with you to make sure any tutorial code is reproducible. Once the updates are finalized, they will merge your updates into the main site!
 
 ## Adding pages
+
+If you would like to propose a new tutorial page for addition to the Now I Know My ABCD docs, these instructions will help you get started. They are written for contributors who already feel comfortable with Python, Jupyter, and Markdown.
 
 ### Creating content
 
@@ -14,7 +26,7 @@ Order matters! Add the new line where you want the resulting chapter to end up.
 
 ## Rendering the book site locally
 
-The website is currently equipped with a GitHub Actions workflow that renders the web-hosted version of the site _every time a change is pushed on the `main` branch._ You do not need to have `jupyter-book` installed on your local machine in order to get the live website to update! :tada: 
+The website is currently equipped with a GitHub Actions workflow that renders the web-hosted version of the site _every time a change is pushed on the `main` branch._ You do not need to have `jupyter-book` installed on your local machine in order to get the live website to update! 🎉 :tada: 
 
 However, you _do_ need to have it installed if you want to preview website edits before pushing. This repo comes with a conda `environment.yml` file that you can (theoretically) use to install all relevant packages. In Monica's experience, `environment.yml` files can be picky and sometimes overly OS-specific, so please contact Monica if you have issues recreating the Python dependencies.
 
