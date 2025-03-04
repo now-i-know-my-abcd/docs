@@ -1,3 +1,7 @@
+# Now I Know My ABCD
+
+Welcome to the GitHub repository home of Now I Know My ABCD, a community-managed unofficial help resource for the ABCD Study! **Click the "Discussions" tab at the top of the page to access the help forum.**
+
 ## Issues (suggest and request updates)
 
 If you would like to suggest an update or addition to the Now I Know My ABCD documentation site, without writing the code yourself, first navigate to the website page you'd like to suggest a change to. Then, open a GitHub issue using the "open issue" link in the GitHub drop-down menu at the top of the page. Include a comment with your issue describing your suggested change, and a site moderator will review your issue and update the website.
