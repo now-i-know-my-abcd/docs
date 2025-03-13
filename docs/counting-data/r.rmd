@@ -1,0 +1,43 @@
+---
+jupyter:
+  kernelspec:
+    display_name: R
+    language: R
+    name: ir
+---
+
+## R
+
+### Counting how many participants have data for one variable, separate by timepoint
+
+The aptly named `count()` function in the `dplyr` package of the tidyverse can help you quickly tabulate how many 
+participants have data for a particular variable.
+
+`count()` returns a summarized dataframe where the `n` column counts the number of rows with each value of `variable`. 
+We can use this logic to count the number of non-missing vs. missing observations by first creating a column equal to 
+`is.na(variable)`, and then counting its levels. This will count up all the rows that don't have NA (and thus have data) 
+and all the rows that are missing data. Rows that don't have data will be `TRUE` (missing), while rows that have data 
+will be `FALSE` (_not_ missing).
+
+Counting simultaneously by `timepoint` and by `is.na(variable)` will return a long-form contingency table with rows counting the number of non-missing and missing rows separately for each timepoint.
+
+This logic _assumes the data have one row per participant_ for a given timepoint.
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+library(readr)
+
+data_path <- here::here("ignore", "abcd_v4", "abcd_mri01.txt")
+data_colnames <- names(read_tsv(data_path, n_max = 0))
+data_descrips <- read_tsv(data_path, n_max = 1, show_col_types = FALSE)
+data <- read_tsv(data_path, col_names = data_colnames, skip = 2, show_col_types = FALSE) %>%
+    select(src_subject_id, eventname) %>%
+    # Hide the actual subject IDs for the purpose of this tutorial output
+    mutate(src_subject_id = forcats::fct_anon(factor(src_subject_id)))
+
+data %>%
+    count(src_subject_id)
+# data %>%
+#    mutate(variable_is_missing = is.na(variable)) %>%
+#    count(timepoint, variable_is_missing)
+```

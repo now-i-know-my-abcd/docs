@@ -13,6 +13,11 @@ execute:
 # Extra fancy Sphinx extensions for nicer book features
 # These need to be installed as python packages!
 sphinx:
+  config:
+    nb_custom_formats:
+        .rmd:
+            - jupytext.reads
+            - fmt: Rmd
   extra_extensions:
   - sphinx_inline_tabs
 

@@ -1,10 +1,12 @@
 name: deploy-book
 
-# Only run this when the master branch changes
+# Run this when the master branch changes
+# Or on pull request activity from issue/PR branches
 on:
   push:
     branches:
     - main
+    - 'issue-**'
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
@@ -12,21 +14,39 @@ on:
     paths:
     - docs/**
     - .github/workflows/deploy-book.yml
+  pull_request:
+    branches:
+    - 'issue-**'
 
 jobs:
   # This job installs dependencies, builds the book, and pushes it to `gh-pages
   deploy-book:
     runs-on: ubuntu-latest
+    
+    env:
+      RENV_PATHS_ROOT: ~/.local/share/renv
 
     steps:
     - uses: actions/checkout@v2
+    
+    - name: Set up R
+      uses: r-lib/actions/setup-r@v2
+
+    - name: Install R dependencies with renv
+      uses: r-lib/actions/setup-renv@v2
+    
+    - name: Set up IRkernel
+      shell: Rscript {0}
+      run: |
+        IRkernel::installspec()
 
     # Install py dependencies
     - name: Set up Python 3.10
       uses: actions/setup-python@v2
       with:
         python-version: 3.10.5
-
+    
+    # Can these also be cached?
     - name: Install py dependencies not with conda cuz we suck
       run: |
         python -m pip install --upgrade pip
