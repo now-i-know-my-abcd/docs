@@ -25,8 +25,7 @@ fsaverage = datasets.fetch_surf_fsaverage()
 # Display Destrieux parcellation on fsaverage5 pial surface using nilearn
 plotting.plot_surf_roi(fsaverage['infl_left'], roi_map=parcellation,
                        hemi='left', view='ventral',
-                       bg_map=fsaverage['sulc_left'], bg_on_data=True,
-                       darkness=.5)
+                       bg_map=fsaverage['sulc_left'], bg_on_data=True)
 
 # %%
 destrieux_df_left = pd.DataFrame({'roi_val': destrieux_atlas.map_left})
@@ -52,7 +51,6 @@ def plot_my_surf_stat_map(hemi, view, axes = None):
                                 hemi=hemi, view=view,
                                 cmap = diverging_palette(194, 327, s = 50, l = 64, as_cmap = True),
                                 bg_map=fsaverage['sulc_left'], bg_on_data=True,
-                                darkness=.5,
                                 axes = axes)
 
 # %%
