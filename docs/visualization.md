@@ -121,8 +121,8 @@ plotting.plot_surf_stat_map(fsaverage['infl_left'],
                                 hemi='left', view='lateral',
                                 # Use seaborn's helper function for diverging gradient colormap
                                 cmap = diverging_palette(194, 327, s = 50, l = 64, as_cmap = True),
-                                bg_map=fsaverage['sulc_left'], bg_on_data=True,
-                                darkness=.5)
+                                bg_map=fsaverage['sulc_left'], bg_on_data=True) #,
+                                #darkness=.5)
 ```
 ```{figure} figs/py_nilearn_leftlateral.png
 ```
