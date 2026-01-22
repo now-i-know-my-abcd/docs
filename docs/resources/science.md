@@ -39,8 +39,8 @@ challenges, and solutions from developmental psychology: https://www.sciencedire
 
 ### Neuroimaging
 
-- What Is the Test-Retest Reliability of Common Task-Functional MRI Measures? New Empirical Evidence and a Meta-Analysis 10.1177/0956797620916786
-- fMRI can be highly reliable, but it depends on what you measure 10.31234/osf.io/9eaxk 
+- What Is the Test-Retest Reliability of Common Task-Functional MRI Measures? New Empirical Evidence and a Meta-Analysis https://doi.org/10.1177/0956797620916786
+- fMRI can be highly reliable, but it depends on what you measure https://doi.org/10.31234/osf.io/9eaxk  
 - Towards Reproducible Brain-Wide Association Studies https://doi.org/10.1101/2020.08.21.257758
 
 ### Big versus small studies
