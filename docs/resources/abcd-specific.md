@@ -14,6 +14,8 @@
 
 [National Brain Development Cohorts (NBDC) Datahub](https://nbdc-datahub.org/)
 
+[Data dictionary](https://nbdc-datashare.lassoinformatics.com/data-wrangler)
+
 
 ### ABCD Workshops
 
