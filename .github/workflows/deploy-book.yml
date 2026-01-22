@@ -46,6 +46,7 @@ jobs:
 
       - name: Build the book
         run: |
+          cd $GITHUB_WORKSPACE
           jupyter-book build docs/
 
       - name: GitHub Pages action
