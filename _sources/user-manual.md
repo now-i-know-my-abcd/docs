@@ -18,6 +18,6 @@ We should all strive to be vigilant about our data and analyses. Mistakes absolu
 ### Safe professional working space
 This goes without saying but please be mindful that this is a safe, professional working space. We ask that you be considerate when navigating our website as well as respectful to others when contributing insights to the discussion board. 
 
-**Important note**: This resource is meant to be accessible for researchers with or without a Data Use Certification (DUC), however, if you are interested in obtaining a DUC to work with the ABCD dataset, please refer to https://nda.nih.gov/abcd/. 
+**Important note**: This resource is meant to be accessible for researchers with or without a Data Use Certification (DUC), however, if you are interested in obtaining a DUC to work with the ABCD dataset, please refer to [this guide](https://www.nbdc-datahub.org/data-access-process).  
 
 Lastly, we are *thrilled* to have you here and hope this network continues to grow!
