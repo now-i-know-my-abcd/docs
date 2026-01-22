@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      # Install py dependencies
+      # Install py dependencies with txt
       - name: Set up Python 3.10
         uses: actions/setup-python@v2
         with:
