@@ -10,7 +10,7 @@
 
 [R packages provided by the ABCD Data Analysis, Informatics, & Resource Center](https://docs.abcdstudy.org/latest/tools/r_packages.html)
 
-[Data Exploration and Analysis Portal (DEAP)](abcd.deapscience.com)
+[Data Exploration and Analysis Portal (DEAP)](https://abcd.deapscience.com/#/home)
 
 [National Brain Development Cohorts (NBDC) Datahub](https://nbdc-datahub.org/)
 
