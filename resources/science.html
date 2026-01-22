@@ -1,0 +1,612 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Domain-specific resources &#8212; Now I Know My ABCD</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/tabs.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'resources/science';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Visualization tips" href="../visualization.html" />
+    <link rel="prev" title="Statistics" href="statistics.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/nikmabcd-logo.png" class="logo__image only-light" alt="Now I Know My ABCD - Home"/>
+    <script>document.write(`<img src="../_static/nikmabcd-logo.png" class="logo__image only-dark" alt="Now I Know My ABCD - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Now I Know My ABCD
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">General info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../user-manual.html">User Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../starting.html">Getting Started with ABCD</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/now-i-know-my-abcd/docs/discussions">ABCD Discussion Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">How to contribute</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="abcd-specific.html">ABCD-specific resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="computing.html">Scientific computing &amp; methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="statistics.html">Statistics</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Domain-specific resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Methods tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualization.html">Visualization tips</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bug-reference.html">Big book of bugs</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">ABCD on Twitter</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../recent_tweets.html">Recent ABCD Relevant Tweets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../old_tweets.html">Relevant ABCD Tweets Since 2015-01-01</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs/issues/new?title=Issue%20on%20page%20%2Fresources/science.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/resources/science.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Domain-specific resources</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adolescence">Adolescence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-racism-discrimination-and-race-ethnicity">Considerations for Racism, Discrimination and Race/Ethnicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neuroimaging">Neuroimaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-versus-small-studies">Big versus small studies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#economic-policy-medical-data-by-us-state">Economic/Policy/Medical Data by US State</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section id="domain-specific-resources">
+<h1>Domain-specific resources<a class="headerlink" href="#domain-specific-resources" title="Permalink to this heading">#</a></h1>
+<p><em>h/t to Victoria Guazzelli Williamson for curating the list of resources below, gathered during the 2021 ABCD Workshop.</em></p>
+<section id="adolescence">
+<h2>Adolescence<a class="headerlink" href="#adolescence" title="Permalink to this heading">#</a></h2>
+<p><strong>Mental Health &amp; Psychopathology</strong></p>
+<ul class="simple">
+<li><p>A focus on adolescence to reduce neurological, mental health and substance-use disability: <a class="reference external" href="https://www.nature.com/articles/nature16030">https://www.nature.com/articles/nature16030</a></p></li>
+<li><p><a class="reference external" href="https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)61611-6/fulltext">https://www.thelancet.com/journals/lancet/article/PIIS0140-6736(13)61611-6/fulltext</a></p></li>
+<li><p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S014976340700053X">https://www.sciencedirect.com/science/article/pii/S014976340700053X</a></p></li>
+<li><p>The ABCD study: understanding the development of risk for mental and physical health outcomes: <a class="reference external" href="https://www.nature.com/articles/s41386-020-0736-6">https://www.nature.com/articles/s41386-020-0736-6</a></p></li>
+</ul>
+<p><strong>Puberty</strong></p>
+<ul class="simple">
+<li><p>Multi-method assessment of pubertal timing and associations with internalizing psychopathology in early adolescent girls <a class="reference external" href="https://psyarxiv.com/p5vfb">https://psyarxiv.com/p5vfb</a></p></li>
+<li><p>A Researcher’s Guide to the Measurement and Modeling of Puberty in the ABCD Study® at Baseline <a class="reference external" href="https://www.frontiersin.org/articles/10.3389/fendo.2021.608575/full?&amp;amp;utm_source=Email_to_authors_&amp;amp;utm_medium=Email&amp;amp;utm_content=T1_11.5e1_author&amp;amp;utm_campaign=Email_publication&amp;amp;field=&amp;amp;journalName=Frontiers_in_Endocrinology&amp;amp;id=608575">https://www.frontiersin.org/articles/10.3389/fendo.2021.608575/full?&amp;utm_source=Email_to_authors_&amp;utm_medium=Email&amp;utm_content=T1_11.5e1_author&amp;utm_campaign=Email_publication&amp;field=&amp;journalName=Frontiers_in_Endocrinology&amp;id=608575</a></p></li>
+</ul>
+<p><strong>Brain</strong></p>
+<ul class="simple">
+<li><p>Baseline brain function in the preadolescents of the ABCD Study <a class="reference external" href="https://www.nature.com/articles/s41593-021-00867-9">https://www.nature.com/articles/s41593-021-00867-9</a></p></li>
+<li><p>Opportunities for increased reproducibility and replicability of developmental neuroimaging: <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1878929320301511">https://www.sciencedirect.com/science/article/pii/S1878929320301511</a></p></li>
+</ul>
+<p><strong>Development/Longitudinal modeling</strong></p>
+<ul class="simple">
+<li><p>Longitudinal modeling in developmental neuroimaging research: Common
+challenges, and solutions from developmental psychology: <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1878929317300300">https://www.sciencedirect.com/science/article/pii/S1878929317300300</a></p></li>
+<li><p>Improving practices and inferences in developmental cognitive neuroscience <a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S1878929320300554">https://www.sciencedirect.com/science/article/pii/S1878929320300554</a></p></li>
+</ul>
+</section>
+<section id="considerations-for-racism-discrimination-and-race-ethnicity">
+<h2>Considerations for Racism, Discrimination and Race/Ethnicity<a class="headerlink" href="#considerations-for-racism-discrimination-and-race-ethnicity" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Hidden in plain sight – reconsidering the use of race correction in clinical algorithms: <a class="reference external" href="https://www.nejm.org/doi/full/10.1056/NEJMms2004740">https://www.nejm.org/doi/full/10.1056/NEJMms2004740</a></p></li>
+<li><p>APA Guidelines for Race/Ethnicity in Psychology: <a class="reference external" href="https://www.apa.org/about/policy/guidelines-race-ethnicity.pdf">https://www.apa.org/about/policy/guidelines-race-ethnicity.pdf</a></p></li>
+<li><p>The National Institute on Minority Health and Health Disparities Research Framework: <a class="reference external" href="https://ajph.aphapublications.org/doi/10.2105/AJPH.2018.304883">https://ajph.aphapublications.org/doi/10.2105/AJPH.2018.304883</a></p></li>
+<li><p>Racism and mental health: Examining the link between racism and depression from a social cognitive perspective. <a class="reference external" href="https://psycnet.apa.org/record/2015-40803-006">https://psycnet.apa.org/record/2015-40803-006</a></p></li>
+<li><p>Social Determinants of Health: Future Directions for Health Disparities Research <a class="reference external" href="https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2019.304964?utm_source=TrendMD&amp;amp;utm_medium=cpc&amp;amp;utm_campaign=Am_J_Public_Health_TrendMD_0">https://ajph.aphapublications.org/doi/full/10.2105/AJPH.2019.304964?utm_source=TrendMD&amp;utm_medium=cpc&amp;utm_campaign=Am_J_Public_Health_TrendMD_0</a></p></li>
+<li><p>Racism: Science &amp; Tools for the Public Health Professional <a class="reference external" href="https://ajph.aphapublications.org/doi/book/10.2105/9780875533049">https://ajph.aphapublications.org/doi/book/10.2105/9780875533049</a></p></li>
+<li><p>The Cost of Racism for People of Color: Contextualizing Experiences of Discrimination <a class="reference external" href="https://www.apa.org/pubs/books/4317394">https://www.apa.org/pubs/books/4317394</a></p></li>
+</ul>
+</section>
+<section id="neuroimaging">
+<h2>Neuroimaging<a class="headerlink" href="#neuroimaging" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>What Is the Test-Retest Reliability of Common Task-Functional MRI Measures? New Empirical Evidence and a Meta-Analysis 10.1177/0956797620916786</p></li>
+<li><p>fMRI can be highly reliable, but it depends on what you measure 10.31234/osf.io/9eaxk</p></li>
+<li><p>Towards Reproducible Brain-Wide Association Studies <a class="reference external" href="https://doi.org/10.1101/2020.08.21.257758">https://doi.org/10.1101/2020.08.21.257758</a></p></li>
+</ul>
+</section>
+<section id="big-versus-small-studies">
+<h2>Big versus small studies<a class="headerlink" href="#big-versus-small-studies" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Leveraging big data to map neurodevelopmental trajectories in pediatric anxiety <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/34147988/">https://pubmed.ncbi.nlm.nih.gov/34147988/</a></p></li>
+<li><p>Large teams develop and small teams disrupt science and technology <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/30760923/">https://pubmed.ncbi.nlm.nih.gov/30760923/</a></p></li>
+</ul>
+</section>
+<section id="economic-policy-medical-data-by-us-state">
+<h2>Economic/Policy/Medical Data by US State<a class="headerlink" href="#economic-policy-medical-data-by-us-state" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Twitter thread on resources for compiling economic/policy/medical data:  <a class="reference external" href="https://twitter.com/elizmart133/status/1413163060005466114">https://twitter.com/elizmart133/status/1413163060005466114</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./resources"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="statistics.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Statistics</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../visualization.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Visualization tips</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#adolescence">Adolescence</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#considerations-for-racism-discrimination-and-race-ethnicity">Considerations for Racism, Discrimination and Race/Ethnicity</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#neuroimaging">Neuroimaging</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#big-versus-small-studies">Big versus small studies</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#economic-policy-medical-data-by-us-state">Economic/Policy/Medical Data by US State</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sana Ali, Clare McCann, Monica Thieu, Lucy Whitmore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
