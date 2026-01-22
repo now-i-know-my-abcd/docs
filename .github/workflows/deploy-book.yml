@@ -14,7 +14,7 @@ on:
     - .github/workflows/deploy-book.yml
 
 jobs:
-  # This job installs dependencies, builds the book, and pushes it to `gh-pages
+  # This job installs dependencies, builds the book, and pushes it to gh-pages
   deploy-book:
     runs-on: ubuntu-latest
 
