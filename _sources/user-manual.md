@@ -1,11 +1,11 @@
 # User Manual 
 
-Welcome to *Now I Know My ABCD*! This collaborative team project was initiated during Neurohackademy 2022, a summer school in data science and neuroimaging held at the University of Washington eSciences Institute. Our team consists of some wonderful humans. As the *creators* of this website, we will be maintaining the content as best we can. To reach out, please see contact information below:
+Welcome to *Now I Know My ABCD*! This collaborative team project was initiated during Neurohackademy 2022, a summer school in data science and neuroimaging held at the University of Washington eSciences Institute. As the *creators* of this website, we will be maintaining the content as best we can. To reach out, please see contact information below:
 
-- Sana Ali (2nd-Year PhD student at UCSD); s5ali@ucsd.edu
-- Clare McCann (1st-Year PhD student at UCLA); clarefmccann@ucla.edu
-- Monica Thieu (Postdoctoral Fellow, Emory University); mthieu@emory.edu 
-- Lucy Whitmore (2nd-Year PhD student, University of Oregon); lwhitmor@uoregon.edu
+- Sana Ali, s5ali@ucsd.edu
+- Clare McCann, clarefmccann@ucla.edu
+- Monica Thieu, mthieu@emory.edu 
+- Lucy Whitmore, lwhitmor@uoregon.edu
 
 Our hope is that we have provided ABCD researchers with a resource hub filled with frequently asked questions, code troubleshooting, archived Slack or related message board threads from past workshops, and associated tweets. Our group is committed to open science, careful work practices and a safe professional working space. A little more on this:
 
