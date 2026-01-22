@@ -43,10 +43,9 @@ jobs:
         for f in *.py; do python "$f"; done
         cd ../..
         
-  # Build the book
-- name: Build the book
-  run: |
-    jupyter-book build docs/
+  - name: Build the book
+    run: |
+        jupyter-book build docs/
 
 
   - name: GitHub Pages action
@@ -54,6 +53,9 @@ jobs:
   with:
     github_token: ${{ secrets.GITHUB_TOKEN }}
     publish_dir: docs/_build/html
+
+
+  
 
 
     # Push the book's HTML to github-pages
