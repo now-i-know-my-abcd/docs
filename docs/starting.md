@@ -5,7 +5,7 @@ ABCD access requests have changed with the release of ABCD 6.0! To work with ABC
 
 
 
-## Archived Instructions: Accessing the NDA & getting an approved DUC:
+## Archived Instructions - Accessing the NDA & getting an approved DUC:
 To work with ABCD data, you’ll need a few things: access to the National Data Archive (NDA), and an approved Data Use Certification (DUC). As a recent update, renewing DUCs will now require creating and registering an NDA study.
 
 The ABCD Repro-Nim Workshop has a [guide](https://docs.google.com/document/d/18hsT2x15bypuXFcfMQb9Ck_YEB7VvY2j4w5hwbV78A4/edit) to requesting NDA user accounts and obtaining a DUC.  
