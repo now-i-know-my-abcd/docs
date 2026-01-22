@@ -6,11 +6,10 @@
 
 ### ABCD dataset and data resources
 
-- Instructions for accessing ABCD data from the cloud: https://nda.nih.gov/training/modules/cloud.html 
-- NDA Tools https://github.com/NDAR/nda-tools
-- NDA S3 Downloader: https://github.com/ABCD-STUDY/nda-abcd-s3-downloader 
-- Collection 3165 - DCAN Labs ABCD-BIDS https://collection3165.readthedocs.io/en/stable/ 
-- Responsible Use of Open-Access Developmental Data: The Adolescent Brain Cognitive Development (ABCD) Study: https://journals.sagepub.com/doi/abs/10.1177/09567976211003564?journalCode=pssa
+[Official data documentation](https://docs.abcdstudy.org/latest/)
+
+[R packages provided by the ABCD Data Analysis, Informatics, & Resource Center](https://docs.abcdstudy.org/latest/tools/r_packages.html)
+
 
 ### ABCD Workshops
 
@@ -35,3 +34,10 @@ The ABCD Workshops were supported by NIH R25MH125545.
 [ABCD ReproNim Neurostars Forum](https://neurostars.org/c/abcd-repronim/232)
 
 Description: Lectures, resources, and data exercises from the ABCD-ReproNim workshops. The ABCD-ReproNim Neurostars page contains some Q&A about working with the data.
+
+### Archived resources
+- Instructions for accessing ABCD data from the cloud: https://nda.nih.gov/training/modules/cloud.html 
+- NDA Tools https://github.com/NDAR/nda-tools
+- NDA S3 Downloader: https://github.com/ABCD-STUDY/nda-abcd-s3-downloader 
+- Collection 3165 - DCAN Labs ABCD-BIDS https://collection3165.readthedocs.io/en/stable/ 
+- Responsible Use of Open-Access Developmental Data: The Adolescent Brain Cognitive Development (ABCD) Study: https://journals.sagepub.com/doi/abs/10.1177/09567976211003564?journalCode=pssa
