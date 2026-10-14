@@ -2,7 +2,7 @@
 
 *Last reviewed: October 2026. Many of these resources were originally curated by Victoria Guazzelli Williamson during the 2021 ABCD Workshop. Suggest additions via an [issue](https://github.com/now-i-know-my-abcd/docs/issues).*
 
-General methods and open-science resources, organized by the decisions you'll face in an ABCD project. For ABCD-specific guidance, see [Best-practice guides](../abcd-data/best-practices.md); for ABCD tools and packages, see [Working with the data](../abcd-data/working-with-data.md) and [ABCD tools & resources](abcd-specific.md).
+General methods and open-science resources, organized by the decisions you'll face in an ABCD project. Want to code along? Jump to the {ref}`hands-on tutorials <hands-on-tutorials>`. For ABCD-specific guidance, see [Best-practice guides](../abcd-data/best-practices.md); for ABCD tools and packages, see [Working with the data](../abcd-data/working-with-data.md) and [ABCD tools & resources](abcd-specific.md).
 
 ## 1. Plan & preregister
 
@@ -98,7 +98,20 @@ The most common mistake with ABCD is **leakage**: siblings, or participants from
 - [Running fMRIPrep on a cluster without internet access (Singularity/Apptainer FAQ)](https://fmriprep.org/en/stable/faq.html#i-m-running-fmriprep-via-singularity-containers-how-can-i-troubleshoot-problems)
 - ABCD imaging pipelines and QC tools are listed on [ABCD tools & resources](abcd-specific.md).
 
-## 10. Podcasts & communities
+(hands-on-tutorials)=
+## 10. Hands-on tutorials
+
+Code-along tutorials written by this community, with side-by-side **R** and **Python** versions:
+
+| Tutorial | What you'll learn |
+|---|---|
+| [Visualization tips](../visualization.md) | Scatterplot matrices for exploring many correlations (`GGally` / `seaborn`), and plotting ROI-wise statistics on the brain (`ggseg` / `nilearn`) |
+
+```{tip}
+Have a tutorial to share, e.g. building a dataset with NBDCtools, fitting a family/site mixed model, or site-aware cross-validation? See [How to contribute](../contributing.md). Tutorials should use **simulated data** (like the ones above), never real ABCD data.
+```
+
+## 11. Podcasts & communities
 
 - [Quantitude](https://quantitude.org/), an approachable podcast on quantitative methods
 - [ReproducibiliTea](https://reproducibilitea.org/), open-science journal clubs (start one!)
