@@ -26,7 +26,6 @@ parts:
     - file: resources/abcd-specific
     - file: resources/computing
     - file: resources/statistics
-    - file: resources/science
   - caption: Methods tutorials
     chapters:
     - file: visualization
