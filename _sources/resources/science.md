@@ -1,8 +1,8 @@
-## Domain-specific resources
+# Domain-specific resources
 
 *h/t to Victoria Guazzelli Williamson for curating the list of resources below, gathered during the 2021 ABCD Workshop.* 
 
-### Adolescence
+## Adolescence
 
 **Mental Health & Psychopathology**
 
@@ -27,7 +27,7 @@
 challenges, and solutions from developmental psychology: https://www.sciencedirect.com/science/article/pii/S1878929317300300 
 - Improving practices and inferences in developmental cognitive neuroscience https://www.sciencedirect.com/science/article/pii/S1878929320300554
 
-### Considerations for Racism, Discrimination and Race/Ethnicity
+## Considerations for Racism, Discrimination and Race/Ethnicity
 
 - Hidden in plain sight -- reconsidering the use of race correction in clinical algorithms: https://www.nejm.org/doi/full/10.1056/NEJMms2004740 
 - APA Guidelines for Race/Ethnicity in Psychology: https://www.apa.org/about/policy/guidelines-race-ethnicity.pdf 
@@ -37,18 +37,18 @@ challenges, and solutions from developmental psychology: https://www.sciencedire
 - Racism: Science & Tools for the Public Health Professional https://ajph.aphapublications.org/doi/book/10.2105/9780875533049 
 - The Cost of Racism for People of Color: Contextualizing Experiences of Discrimination https://www.apa.org/pubs/books/4317394 
 
-### Neuroimaging
+## Neuroimaging
 
 - What Is the Test-Retest Reliability of Common Task-Functional MRI Measures? New Empirical Evidence and a Meta-Analysis https://doi.org/10.1177/0956797620916786
 - fMRI can be highly reliable, but it depends on what you measure https://doi.org/10.31234/osf.io/9eaxk  
 - Towards Reproducible Brain-Wide Association Studies https://doi.org/10.1101/2020.08.21.257758
 
-### Big versus small studies
+## Big versus small studies
 
 - Leveraging big data to map neurodevelopmental trajectories in pediatric anxiety https://pubmed.ncbi.nlm.nih.gov/34147988/ 
 - Large teams develop and small teams disrupt science and technology https://pubmed.ncbi.nlm.nih.gov/30760923/ 
 
-### Economic/Policy/Medical Data by US State
+## Economic/Policy/Medical Data by US State
 
 - Twitter thread on resources for compiling economic/policy/medical data:  https://twitter.com/elizmart133/status/1413163060005466114
  

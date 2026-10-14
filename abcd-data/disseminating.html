@@ -1,0 +1,686 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Disseminating your work &#8212; Now I Know My ABCD</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/tabs.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'abcd-data/disseminating';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Best-practice guides (peer-reviewed reading list)" href="best-practices.html" />
+    <link rel="prev" title="Working with the data: tools &amp; packages" href="working-with-data.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/nikmabcd-logo.png" class="logo__image only-light" alt="Now I Know My ABCD - Home"/>
+    <script>document.write(`<img src="../_static/nikmabcd-logo.png" class="logo__image only-dark" alt="Now I Know My ABCD - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Now I Know My ABCD
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">General info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../user-manual.html">User Manual</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/now-i-know-my-abcd/docs/discussions">ABCD Discussion Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">How to contribute</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with ABCD data</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../starting.html">Getting started with ABCD: quick start</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="overview.html">Working with ABCD data: start here</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="getting-access.html">Getting access: the Data Use Certification (DUC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessing-data.html">Accessing the data: what’s where</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloading-data.html">Downloading the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-data.html">Working with the data: tools &amp; packages</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Disseminating your work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best-practices.html">Best-practice guides (peer-reviewed reading list)</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/abcd-specific.html">ABCD tools &amp; resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/computing.html">Scientific computing &amp; methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/science.html">Domain-specific resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Methods tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualization.html">Visualization tips</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">News</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../news.html">ABCD news &amp; new papers</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs/issues/new?title=Issue%20on%20page%20%2Fabcd-data/disseminating.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/abcd-data/disseminating.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Disseminating your work</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-the-short-checklist">Required: the short checklist</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citing-the-data">Citing the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-acknowledgment-statement">The acknowledgment statement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responsible-reporting">Responsible reporting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommended-open-science-practices">Recommended: open-science practices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preregistration">Preregistration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-code-strongly-encouraged-duc-16">Sharing code (strongly encouraged, DUC §16)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-report-in-the-methods">What to report in the methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posters-talks-and-teaching">Posters, talks, and teaching</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="disseminating-your-work">
+<h1>Disseminating your work<a class="headerlink" href="#disseminating-your-work" title="Permalink to this heading">#</a></h1>
+<p><em>Last reviewed: October 2026. Official sources: <a class="reference external" href="https://docs.abcdstudy.org/latest/usage/acknowledgement.html">ABCD docs: Acknowledgement</a>, <a class="reference external" href="https://docs.abcdstudy.org/latest/usage/responsible_use.html">Responsible use</a>, <a class="reference external" href="https://www.nbdc-datahub.org/faqs">NBDC FAQs</a>, and the <a class="reference external" href="https://www.nbdc-datahub.org/data-access-process">DUC</a>.</em></p>
+<p>This page covers what you must do (and what you should do) when sharing ABCD findings in papers, preprints, posters, talks, and code.</p>
+<section id="required-the-short-checklist">
+<h2>Required: the short checklist<a class="headerlink" href="#required-the-short-checklist" title="Permalink to this heading">#</a></h2>
+<ul class="contains-task-list simple">
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Active DUC</strong> through submission, revision, and publication (DUC §5).</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Cite the release DOI</strong> in every paper, abstract (as space allows), poster, and talk (DUC §17).</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Include the ABCD acknowledgment statement</strong> (below).</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>No cells smaller than 10</strong> in any table, figure, or text (DUC §6). This includes demographic tables, crosstabs, and subgroup plots.</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>No individual-level data</strong>, raw or derived, in supplements, repositories, or figures that could identify participants (DUC §4). If unsure, email <a class="reference external" href="mailto:nbdc&#37;&#52;&#48;mail&#46;nih&#46;gov">nbdc<span>&#64;</span>mail<span>&#46;</span>nih<span>&#46;</span>gov</a> <strong>before</strong> publishing.</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>A-DUC</strong> if you report American Indian/Alaska Native results separately (see <a class="reference internal" href="getting-access.html"><span class="doc std std-doc">Getting access</span></a>).</p></li>
+<li class="task-list-item"><p><input class="task-list-item-checkbox" disabled="disabled" type="checkbox"> <strong>Register the publication with NBDC</strong> once it has a DOI or PMID (DUC §16), and list it in your annual DUC <strong>Progress Report</strong>.</p></li>
+</ul>
+</section>
+<section id="citing-the-data">
+<h2>Citing the data<a class="headerlink" href="#citing-the-data" title="Permalink to this heading">#</a></h2>
+<p>Use the DOI for <strong>the specific release you analyzed</strong> (<a class="reference external" href="https://www.nbdc-datahub.org/abcd-study">NBDC ABCD page</a>):</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Release</p></th>
+<th class="head"><p>DOI</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>7.0</p></td>
+<td><p><a class="reference external" href="https://doi.org/10.82525/8f3w-5260">https://doi.org/10.82525/8f3w-5260</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>6.1</p></td>
+<td><p><a class="reference external" href="https://doi.org/10.82525/ab4q-qr87">https://doi.org/10.82525/ab4q-qr87</a></p></td>
+</tr>
+<tr class="row-even"><td><p>6.0</p></td>
+<td><p><a class="reference external" href="https://doi.org/10.82525/jy7n-g441">https://doi.org/10.82525/jy7n-g441</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>5.1.1</p></td>
+<td><p><a class="reference external" href="https://doi.org/10.82525/wjkw-bp63">https://doi.org/10.82525/wjkw-bp63</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The NBDC 7.0 page displays the DOI as “10.1.66.93/8f3w-5260”, which appears to be a typo. Its link resolves to <strong>10.82525/8f3w-5260</strong>, which is the one to use.</p>
+</div>
+<p>The ABCD documentation is also versioned on Zenodo. Citing the docs version you used (see the <a class="reference external" href="https://docs.abcdstudy.org/latest/info/citation.html">citation page</a>) helps readers find the exact variable definitions.</p>
+</section>
+<section id="the-acknowledgment-statement">
+<h2>The acknowledgment statement<a class="headerlink" href="#the-acknowledgment-statement" title="Permalink to this heading">#</a></h2>
+<p>Copy the <strong>current, full</strong> text from the <a class="reference external" href="https://docs.abcdstudy.org/latest/usage/acknowledgement.html">ABCD acknowledgment page</a> rather than from an old paper. The award list and wording change. It includes:</p>
+<ol class="arabic simple">
+<li><p>“Data used in the preparation of this article were obtained from the Adolescent Brain Cognitive Development™ (ABCD) Study (<a class="reference external" href="https://abcdstudy.org">https://abcdstudy.org</a>), held in the NIH Brain Development Cohorts Data Sharing Platform…”</p></li>
+<li><p>The list of NIH award numbers and a link to the <a class="reference external" href="https://abcdstudy.org/federal-partners.html">federal partners</a>.</p></li>
+<li><p>A disclaimer that consortium investigators did not necessarily participate in your analysis, and that your views don’t necessarily reflect those of NIH or the ABCD consortium.</p></li>
+<li><p><strong>Conditional additions:</strong> a sentence about versioned releases plus the DOI, and extra statements if you use linked environmental data (NIEHS) or the Social Development substudy (NIJ).</p></li>
+</ol>
+<p>Also follow the <a class="reference external" href="https://abcdstudy.org/wp-content/uploads/2020/04/ABCD_Trademarks_Service_Marks-1.pdf">ABCD trademark guidance</a> (e.g., “Adolescent Brain Cognitive Development℠ Study” / “ABCD Study®”).</p>
+</section>
+<section id="responsible-reporting">
+<h2>Responsible reporting<a class="headerlink" href="#responsible-reporting" title="Permalink to this heading">#</a></h2>
+<p>From the <a class="reference external" href="https://docs.abcdstudy.org/latest/usage/responsible_use.html">ABCD responsible-use guidance</a>:</p>
+<ul class="simple">
+<li><p>Don’t treat race/ethnicity as a proxy for environmental exposures such as racism, poverty, or neighborhood. Measure those directly where possible. See <a class="reference internal" href="best-practices.html"><span class="doc std std-doc">Cardenas-Iniguez &amp; Gonzalez (2024)</span></a>.</p></li>
+<li><p>Be cautious with SES measures, and don’t rely on a single indicator.</p></li>
+<li><p>Use person-first, non-stigmatizing language (see NIDA’s <a class="reference external" href="https://nida.nih.gov/research-topics/addiction-science/words-matter-preferred-language-talking-about-addiction">Words Matter</a>).</p></li>
+<li><p>Check DEAP’s per-variable <strong>data-consideration</strong> and <strong>responsible-use</strong> flags for every variable you report.</p></li>
+<li><p>Report effect sizes with context. Most ABCD effects are small, and that’s expected (<a class="reference internal" href="best-practices.html"><span class="doc std std-doc">Owens et al. 2021</span></a>; <a class="reference internal" href="best-practices.html"><span class="doc std std-doc">Dick et al. 2021</span></a>).</p></li>
+</ul>
+</section>
+<section id="recommended-open-science-practices">
+<h2>Recommended: open-science practices<a class="headerlink" href="#recommended-open-science-practices" title="Permalink to this heading">#</a></h2>
+<section id="preregistration">
+<h3>Preregistration<a class="headerlink" href="#preregistration" title="Permalink to this heading">#</a></h3>
+<p>The DUC (§15) <em>strongly encourages</em> preregistering planned and exploratory analyses (e.g., on <a class="reference external" href="https://osf.io/">OSF</a>) <strong>before analysis</strong>. Because ABCD data are already collected, be explicit about what you have and haven’t looked at.</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.cos.io/initiatives/prereg">OSF Preregistration</a>; for secondary data, use the <a class="reference external" href="https://osf.io/x4gzt/">Secondary Data Preregistration template</a></p></li>
+<li><p>Consider a <strong>Registered Report</strong>. Several journals (e.g., <em>Developmental Cognitive Neuroscience</em>) accept them.</p></li>
+<li><p>Blinded / view-only preregistration links for peer review (search “view-only link” in <a class="reference external" href="https://help.osf.io/">OSF Help</a>)</p></li>
+<li><p>Example: search <a class="reference external" href="https://osf.io/registries">OSF Registries</a> for “ABCD”</p></li>
+</ul>
+</section>
+<section id="sharing-code-strongly-encouraged-duc-16">
+<h3>Sharing code (strongly encouraged, DUC §16)<a class="headerlink" href="#sharing-code-strongly-encouraged-duc-16" title="Permalink to this heading">#</a></h3>
+<p>The DUC literally points to this community’s GitHub (<a class="reference external" href="https://github.com/now-i-know-my-abcd">github.com/now-i-know-my-abcd</a>) as an example of code sharing.</p>
+<ul class="simple">
+<li><p>Put analysis code on <strong>GitHub</strong>, and archive a release on <strong><a class="reference external" href="https://zenodo.org/">Zenodo</a></strong> or <strong>OSF</strong> to get a citable DOI.</p></li>
+<li><p><strong>Never commit data.</strong> Add your data directory to <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>, and double-check that outputs (figures, <code class="docutils literal notranslate"><span class="pre">.RData</span></code>, notebooks with printed data frames) don’t contain individual-level data or small cells.</p></li>
+<li><p>Share your <strong>variable list</strong> and <strong>inclusion/exclusion steps</strong>. Variable names and metadata are not participant data.</p></li>
+<li><p>Record package versions (<code class="docutils literal notranslate"><span class="pre">renv</span></code> / <code class="docutils literal notranslate"><span class="pre">sessionInfo()</span></code> in R; <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> / <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code> in Python).</p></li>
+</ul>
+</section>
+<section id="what-to-report-in-the-methods">
+<h3>What to report in the methods<a class="headerlink" href="#what-to-report-in-the-methods" title="Permalink to this heading">#</a></h3>
+<p><a class="reference internal" href="best-practices.html"><span class="doc std std-doc">Lopez et al. (2024)</span></a> audited 549 ABCD papers and found that only ~30% shared scripts and ~38% reported per-variable missingness. You can do better by reporting:</p>
+<ul class="simple">
+<li><p>Release number, NBDC DOI, and docs version</p></li>
+<li><p>Exact variable names (new 6.0+ names; old names too if helpful)</p></li>
+<li><p>How you derived your analytic sample (flowchart with Ns at each step, all ≥ 10)</p></li>
+<li><p>Missingness per variable and how it was handled</p></li>
+<li><p>How you handled family, site/scanner, and repeated-measures dependence</p></li>
+<li><p>Whether and how you used population weights</p></li>
+<li><p>A link to your code and preregistration</p></li>
+</ul>
+<p>The ABCD responsible-use page links a <strong><a class="reference external" href="https://osf.io/26kyt">reproducibility checklist</a></strong> that is handy before submission.</p>
+</section>
+</section>
+<section id="posters-talks-and-teaching">
+<h2>Posters, talks, and teaching<a class="headerlink" href="#posters-talks-and-teaching" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p>The same rules apply: cite the DOI, include the acknowledgment (abbreviated if space requires, with a link), and keep all cells ≥ 10.</p></li>
+<li><p>You may <em>show</em> individual-level data in <strong>educational settings</strong> (e.g., a workshop) to people without a DUC, but you may not <em>give</em> them the data (DUC §5).</p></li>
+<li><p>Preprints are public disclosures, so treat them like publications.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./abcd-data"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="working-with-data.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Working with the data: tools &amp; packages</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="best-practices.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Best-practice guides (peer-reviewed reading list)</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#required-the-short-checklist">Required: the short checklist</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citing-the-data">Citing the data</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-acknowledgment-statement">The acknowledgment statement</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#responsible-reporting">Responsible reporting</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#recommended-open-science-practices">Recommended: open-science practices</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#preregistration">Preregistration</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#sharing-code-strongly-encouraged-duc-16">Sharing code (strongly encouraged, DUC §16)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-to-report-in-the-methods">What to report in the methods</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#posters-talks-and-teaching">Posters, talks, and teaching</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sana Ali, Clare McCann, Monica Thieu, Lucy Whitmore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

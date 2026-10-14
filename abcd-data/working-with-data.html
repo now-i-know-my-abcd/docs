@@ -1,0 +1,805 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Working with the data: tools &amp; packages &#8212; Now I Know My ABCD</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/tabs.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'abcd-data/working-with-data';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Disseminating your work" href="disseminating.html" />
+    <link rel="prev" title="Downloading the data" href="downloading-data.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/nikmabcd-logo.png" class="logo__image only-light" alt="Now I Know My ABCD - Home"/>
+    <script>document.write(`<img src="../_static/nikmabcd-logo.png" class="logo__image only-dark" alt="Now I Know My ABCD - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Now I Know My ABCD
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">General info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../user-manual.html">User Manual</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/now-i-know-my-abcd/docs/discussions">ABCD Discussion Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">How to contribute</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with ABCD data</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../starting.html">Getting started with ABCD: quick start</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="overview.html">Working with ABCD data: start here</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="getting-access.html">Getting access: the Data Use Certification (DUC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessing-data.html">Accessing the data: what’s where</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloading-data.html">Downloading the data</a></li>
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Working with the data: tools &amp; packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="disseminating.html">Disseminating your work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best-practices.html">Best-practice guides (peer-reviewed reading list)</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/abcd-specific.html">ABCD tools &amp; resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/computing.html">Scientific computing &amp; methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/science.html">Domain-specific resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Methods tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualization.html">Visualization tips</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">News</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../news.html">ABCD news &amp; new papers</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs/issues/new?title=Issue%20on%20page%20%2Fabcd-data/working-with-data.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/abcd-data/working-with-data.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Working with the data: tools & packages</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-variables">1. Finding variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deap-data-dictionary-ontology-explorer-official">DEAP Data Dictionary &amp; Ontology Explorer (official)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abcd-data-dictionary-semantic-search-community">ABCD Data Dictionary Semantic Search (community)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-analysis-datasets">2. Building analysis datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nbdctools-r-official">NBDCtools (R, official)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nbdctools-python-official">nbdctools (Python, official)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-parquet-directly">Reading Parquet directly</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-summary-scores">3. Computing summary scores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abcdscores-r-official">ABCDscores (R, official)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-in-deap">4. Analysis in DEAP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-and-analysis-packages">5. Modeling and analysis packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imaging-pipelines">6. Imaging pipelines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-learning-resources">7. Training &amp; learning resources</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="working-with-the-data-tools-packages">
+<h1>Working with the data: tools &amp; packages<a class="headerlink" href="#working-with-the-data-tools-packages" title="Permalink to this heading">#</a></h1>
+<p><em>Last reviewed: October 2026 (ABCD Release 7.0). Official source: <a class="reference external" href="https://docs.abcdstudy.org/latest/tools/tools.html">ABCD docs: Tools</a> and <a class="reference external" href="https://docs.abcdstudy.org/latest/tools/packages.html">Packages</a>.</em></p>
+<p>This page collects the official and community tools for finding variables, building datasets, computing scores, and modeling ABCD data. Package versions noted here were current at last review, so check each link for updates.</p>
+<section id="finding-variables">
+<h2>1. Finding variables<a class="headerlink" href="#finding-variables" title="Permalink to this heading">#</a></h2>
+<section id="deap-data-dictionary-ontology-explorer-official">
+<h3>DEAP Data Dictionary &amp; Ontology Explorer (official)<a class="headerlink" href="#deap-data-dictionary-ontology-explorer-official" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://abcd.deapscience.com">DEAP</a> lets you browse every variable by domain (ontology tree), with descriptions, value levels, and per-variable <strong>data-consideration</strong> and <strong>responsible-use</strong> flags. <strong>No DUC is needed to browse the dictionary.</strong> Search is keyword-based (space-separated terms are combined with AND). <a class="reference external" href="https://docs.deapscience.com/datasets/data_dictionary.html">Docs</a></p>
+</section>
+<section id="abcd-data-dictionary-semantic-search-community">
+<h3>ABCD Data Dictionary Semantic Search (community)<a class="headerlink" href="#abcd-data-dictionary-semantic-search-community" title="Permalink to this heading">#</a></h3>
+<p>The <a class="reference external" href="https://beepboopstats.com/abcd-dictionary"><strong>ABCD Data Dictionary Semantic Search</strong></a> app, by Biplabendu Das, lets you describe what you’re looking for in <strong>plain language</strong> (e.g., “sleep problems reported by parents” or “neighborhood safety”) and returns the most related variables, even when they don’t share your exact words.</p>
+<ul class="simple">
+<li><p><strong>How it works:</strong> it compares a sentence embedding of your query with embeddings of each variable’s label (all-MiniLM-L6-v2) and ranks results by cosine similarity. You can filter by similarity threshold, source, domain, and variable type.</p></li>
+<li><p><strong>Why it’s useful:</strong> ABCD has tens of thousands of variables with cryptic names, and keyword search misses synonyms. Semantic search helps with that.</p></li>
+<li><p><strong>Output:</strong> export the matching variables to CSV, and copy a ready-made code snippet that feeds them into <code class="docutils literal notranslate"><span class="pre">NBDCtools::create_dataset()</span></code>.</p></li>
+<li><p><strong>Coverage:</strong> 6.0 and 7.0 data dictionaries. No DUC needed, since it searches only metadata.</p></li>
+<li><p><strong>Links:</strong> <a class="reference external" href="https://beepboopstats.com/abcd-dictionary">App (beepboopstats.com)</a> · <a class="reference external" href="https://biplabendu.shinyapps.io/abcd-dictionary/">mirror (shinyapps.io)</a> · <a class="reference external" href="https://lezhang100-shiny-chatbot-dictionary-abcd.hf.space/">7.0 version on Hugging Face</a> · <a class="reference external" href="https://github.com/biplabendu/shiny-chatbot-dictionary-abcd">GitHub</a> · <a class="reference external" href="https://biplabendu.github.io/shiny-chatbot-dictionary-abcd">Docs</a> · <a class="reference external" href="https://www.youtube.com/watch?v=9NmK5mdekfM">Demo video</a></p></li>
+</ul>
+<div class="admonition caution">
+<p class="admonition-title">Caution</p>
+<p>Semantic search is a discovery aid, not a substitute for reading the variable documentation. Always confirm a variable’s wording, respondent (youth vs. parent), sessions collected, and data-consideration flags in DEAP or the <a class="reference external" href="https://docs.abcdstudy.org/latest/">ABCD docs</a>. The search tool works on the <strong>data dictionary only</strong>. Never paste ABCD participant data into any chatbot or AI tool, because the DUC prohibits it.</p>
+</div>
+</section>
+</section>
+<section id="building-analysis-datasets">
+<h2>2. Building analysis datasets<a class="headerlink" href="#building-analysis-datasets" title="Permalink to this heading">#</a></h2>
+<section id="nbdctools-r-official">
+<h3>NBDCtools (R, official)<a class="headerlink" href="#nbdctools-r-official" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://software.nbdc-datahub.org/NBDCtools/">NBDCtools</a> (DAIRC) builds an analysis-ready data frame from the <strong>locally downloaded tabulated release</strong> (<code class="docutils literal notranslate"><span class="pre">rawdata/phenotype/</span></code>), given a list of variables and/or tables. It handles joining, labels, missing codes, and event filtering.</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;NBDCtools&quot;</span><span class="p">)</span>
+<span class="c1"># metadata package (data dictionary + levels), updated each release:</span>
+<span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;NBDCtoolsData&quot;</span><span class="p">,</span><span class="w"> </span><span class="n">repos</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;https://nbdc-datahub.r-universe.dev&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Key functions:</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Task</p></th>
+<th class="head"><p>Functions</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Build a dataset</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">create_dataset()</span></code>, <code class="docutils literal notranslate"><span class="pre">create_dataset_abcd()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Join / read tables</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">join_tabulated()</span></code>, <code class="docutils literal notranslate"><span class="pre">read_dsv_formatted()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Missing codes → NA</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">transf_value_to_na()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Labels / factors</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">transf_factor()</span></code>, <code class="docutils literal notranslate"><span class="pre">transf_label()</span></code>, <code class="docutils literal notranslate"><span class="pre">transf_value_to_label()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Filter sessions/rows</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">filter_events_abcd()</span></code>, <code class="docutils literal notranslate"><span class="pre">filter_id_events()</span></code>, <code class="docutils literal notranslate"><span class="pre">filter_empty_rows()</span></code>, <code class="docutils literal notranslate"><span class="pre">filter_empty_cols()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Missingness (“shadow”) matrices</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">shadow_bind_data()</span></code>, <code class="docutils literal notranslate"><span class="pre">shadow_replace_binding_missing()</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Metadata</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">get_dd()</span></code>, <code class="docutils literal notranslate"><span class="pre">get_levels()</span></code>, <code class="docutils literal notranslate"><span class="pre">get_sessions()</span></code>, <code class="docutils literal notranslate"><span class="pre">get_releases()</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Old ↔ new variable names</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">convert_names_data()</span></code>, <code class="docutils literal notranslate"><span class="pre">convert_names_file()</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Vignettes: <a class="reference external" href="https://software.nbdc-datahub.org/NBDCtools/articles/NBDCtools.html">Get started</a> · <a class="reference external" href="https://software.nbdc-datahub.org/NBDCtools/articles/join.html">Joining</a> · <a class="reference external" href="https://software.nbdc-datahub.org/NBDCtools/articles/transformation.html">Transformations</a> · <a class="reference external" href="https://software.nbdc-datahub.org/NBDCtools/articles/filter.html">Filtering</a> · <a class="reference external" href="https://software.nbdc-datahub.org/NBDCtools/articles/metadata.html">Metadata</a> · <a class="reference external" href="https://software.nbdc-datahub.org/NBDCtools/articles/shadow.html">Shadow matrices</a></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>ABCD tables are <strong>long</strong> (one row per participant × session). NBDCtools doesn’t reshape to wide, so use <code class="docutils literal notranslate"><span class="pre">tidyr::pivot_wider()</span></code> if you need wide format. Many models (mixed models, GAMMs) want long data anyway.</p>
+</div>
+</section>
+<section id="nbdctools-python-official">
+<h3>nbdctools (Python, official)<a class="headerlink" href="#nbdctools-python-official" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://software.nbdc-datahub.org/nbdctools-py">nbdctools</a> is the Python counterpart (requires Python ≥ 3.11).</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip<span class="w"> </span>install<span class="w"> </span>nbdctools
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">create_dataset_py()</span></code>: pure-Python dataset builder.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">create_dataset()</span></code>: wraps the R package via <code class="docutils literal notranslate"><span class="pre">rpy2</span></code> (requires R + NBDCtools installed).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">download_metadata()</span></code> / <code class="docutils literal notranslate"><span class="pre">load_metadata()</span></code>: load the data dictionary and levels as Polars DataFrames.</p></li>
+</ul>
+<p><a class="reference external" href="https://github.com/nbdc-datahub/nbdctools-py">GitHub</a></p>
+</section>
+<section id="reading-parquet-directly">
+<h3>Reading Parquet directly<a class="headerlink" href="#reading-parquet-directly" title="Permalink to this heading">#</a></h3>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="c1"># R</span>
+<span class="nf">library</span><span class="p">(</span><span class="n">arrow</span><span class="p">)</span>
+<span class="n">df</span><span class="w"> </span><span class="o">&lt;-</span><span class="w"> </span><span class="nf">read_parquet</span><span class="p">(</span><span class="s">&quot;rawdata/phenotype/&lt;table&gt;.parquet&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Python</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">polars</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pl</span>            <span class="c1"># or: import pandas as pd; pd.read_parquet(...)</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pl</span><span class="o">.</span><span class="n">read_parquet</span><span class="p">(</span><span class="s2">&quot;rawdata/phenotype/&lt;table&gt;.parquet&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+<section id="computing-summary-scores">
+<h2>3. Computing summary scores<a class="headerlink" href="#computing-summary-scores" title="Permalink to this heading">#</a></h2>
+<section id="abcdscores-r-official">
+<h3>ABCDscores (R, official)<a class="headerlink" href="#abcdscores-r-official" title="Permalink to this heading">#</a></h3>
+<p><a class="reference external" href="https://software.nbdc-datahub.org/ABCDscores/">ABCDscores</a> reproduces the official non-proprietary summary scores (release 6.0+), and lets you change the missingness threshold (default ≈ 80% item completion) or compute alternative scores. Its major version tracks the data release (7.x for release 7).</p>
+<div class="highlight-r notranslate"><div class="highlight"><pre><span></span><span class="nf">install.packages</span><span class="p">(</span><span class="s">&quot;ABCDscores&quot;</span><span class="p">)</span>
+<span class="c1"># pin a version to match your release, e.g.:</span>
+<span class="c1"># remotes::install_github(&quot;nbdc-datahub/ABCDscores@v6.0.0&quot;)</span>
+</pre></div>
+</div>
+<p>Functions are named <code class="docutils literal notranslate"><span class="pre">compute_&lt;domain&gt;_&lt;respondent&gt;_&lt;instrument&gt;__&lt;subscale&gt;_&lt;stat&gt;()</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">compute_mh_p_ders__attun_mean()</span></code>), with <code class="docutils literal notranslate"><span class="pre">compute_&lt;prefix&gt;_all()</span></code> helpers per instrument. Preprint: <a class="reference external" href="https://www.biorxiv.org/content/10.1101/2025.09.04.674066">bioRxiv 2025.09.04.674066</a>.</p>
+</section>
+</section>
+<section id="analysis-in-deap">
+<h2>4. Analysis in DEAP<a class="headerlink" href="#analysis-in-deap" title="Permalink to this heading">#</a></h2>
+<p>Since May 2026, <a class="reference external" href="https://abcd.deapscience.com">DEAP</a> includes:</p>
+<ul class="simple">
+<li><p><strong>Explorations:</strong> interactive plots of any variable, with PNG export.</p></li>
+<li><p><strong>Analyses:</strong> server-side linear mixed models and GAMMs powered by <strong>FEMA</strong>, on tabulated variables <em>or</em> imaging outcomes (ROI, vertexwise, voxelwise, connectome), with family and subject random effects by default, optional genetic relatedness and PCs, splines and transforms, and built-in brain viewers.</p></li>
+</ul>
+<p>Docs: <a class="reference external" href="https://docs.deapscience.com/analyses/fema.html">FEMA in DEAP</a> · <a class="reference external" href="https://docs.deapscience.com/analyses/model-specification.html">Model specification</a> · <a class="reference external" href="https://docs.deapscience.com/analyses/splines.html">Splines</a> · <a class="reference external" href="https://docs.deapscience.com/analyses/brain-viewers.html">Brain viewers</a> · <a class="reference external" href="https://docs.deapscience.com/info/updates.html">What’s new</a></p>
+<p>DEAP is great for exploration and quick checks. For publications, make sure you can document and reproduce every modeling choice.</p>
+</section>
+<section id="modeling-and-analysis-packages">
+<h2>5. Modeling and analysis packages<a class="headerlink" href="#modeling-and-analysis-packages" title="Permalink to this heading">#</a></h2>
+<p>ABCD’s design creates dependencies you need to model: <strong>siblings/twins within families</strong>, <strong>families within sites</strong>, <strong>repeated measures within participants</strong>, and <strong>scanner</strong> differences for imaging. See <a class="reference internal" href="best-practices.html"><span class="doc std std-doc">Best-practice guides</span></a> for the reasoning.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Need</p></th>
+<th class="head"><p>R</p></th>
+<th class="head"><p>Python / other</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Mixed models (family, site, subject nesting)</p></td>
+<td><p><a class="reference external" href="https://cran.r-project.org/package=lme4"><code class="docutils literal notranslate"><span class="pre">lme4</span></code></a>, <a class="reference external" href="https://cran.r-project.org/package=glmmTMB"><code class="docutils literal notranslate"><span class="pre">glmmTMB</span></code></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">statsmodels</span></code> MixedLM</p></td>
+</tr>
+<tr class="row-odd"><td><p>Nonlinear age trajectories</p></td>
+<td><p><a class="reference external" href="https://cran.r-project.org/package=gamm4"><code class="docutils literal notranslate"><span class="pre">gamm4</span></code></a>, <a class="reference external" href="https://cran.r-project.org/package=mgcv"><code class="docutils literal notranslate"><span class="pre">mgcv</span></code></a></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>Whole-brain mixed models with family structure</p></td>
+<td><p>—</p></td>
+<td><p><a class="reference external" href="https://github.com/cmig-research-group/cmig_tools">FEMA / cmig_tools</a> (MATLAB; <a class="reference external" href="https://docs.abcdstudy.org/latest/tools/cmig_pipeline.html">ABCD docs</a>)</p></td>
+</tr>
+<tr class="row-odd"><td><p>Survey/population weights</p></td>
+<td><p><a class="reference external" href="https://cran.r-project.org/package=survey"><code class="docutils literal notranslate"><span class="pre">survey</span></code></a></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>Site/scanner harmonization (ComBat)</p></td>
+<td><p><a class="reference external" href="https://github.com/jcbeer/longCombat"><code class="docutils literal notranslate"><span class="pre">longCombat</span></code></a></p></td>
+<td><p><a class="reference external" href="https://github.com/rpomponio/neuroHarmonize"><code class="docutils literal notranslate"><span class="pre">neuroHarmonize</span></code></a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Missing data</p></td>
+<td><p><a class="reference external" href="https://cran.r-project.org/package=mice"><code class="docutils literal notranslate"><span class="pre">mice</span></code></a>, <a class="reference external" href="https://cran.r-project.org/package=naniar"><code class="docutils literal notranslate"><span class="pre">naniar</span></code></a></p></td>
+<td><p>—</p></td>
+</tr>
+<tr class="row-even"><td><p>SEM / longitudinal SEM</p></td>
+<td><p><a class="reference external" href="https://lavaan.ugent.be/"><code class="docutils literal notranslate"><span class="pre">lavaan</span></code></a></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">semopy</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Brain plots</p></td>
+<td><p><a class="reference external" href="https://ggsegverse.github.io/ggseg/"><code class="docutils literal notranslate"><span class="pre">ggseg</span></code></a></p></td>
+<td><p><a class="reference external" href="https://nilearn.github.io"><code class="docutils literal notranslate"><span class="pre">nilearn</span></code></a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>See also this site’s <a class="reference internal" href="../visualization.html"><span class="doc std std-doc">Visualization tips</span></a>.</p>
+</section>
+<section id="imaging-pipelines">
+<h2>6. Imaging pipelines<a class="headerlink" href="#imaging-pipelines" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Tool</p></th>
+<th class="head"><p>What it is</p></th>
+<th class="head"><p>Status</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><a class="reference external" href="https://docs.abcdstudy.org/latest/documentation/imaging/abcc_start_page.html">ABCC (ABCD-BIDS Community Collection)</a></p></td>
+<td><p>Processed derivatives (fMRIPrep, XCP-D, QSIPrep/QSIRecon) distributed in the official release</p></td>
+<td><p>Active (v4.0.0)</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://docs.abcdstudy.org/latest/tools/cmig_pipeline.html">DAIRC MMPS pipeline</a></p></td>
+<td><p>Source of the tabulated imaging measures; Hagler et al. 2019</p></td>
+<td><p>Active</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference external" href="https://github.com/DCAN-Labs/abcd-hcp-pipeline">abcd-hcp-pipeline</a></p></td>
+<td><p>DCAN fMRI BIDS app (Docker)</p></td>
+<td><p>Active; derivatives no longer in ABCC as of 7.0</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference external" href="https://github.com/DCAN-Labs/abcd-dicom2bids">abcd-dicom2bids</a></p></td>
+<td><p>DICOM → BIDS conversion</p></td>
+<td><p>Built for NDA era. Raw BIDS is now provided directly</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+<section id="training-learning-resources">
+<h2>7. Training &amp; learning resources<a class="headerlink" href="#training-learning-resources" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>ABCD-ReproNim</strong>: free course on reproducible ABCD analysis. <a class="reference external" href="https://www.abcd-repronim.org/">Website</a> · <a class="reference external" href="https://www.youtube.com/playlist?list=PLU6a0ES56Gvgdg9eoI-Vqtr_nKOH85Ufr">Videos</a> · <a class="reference external" href="https://github.com/ABCD-ReproNim">Exercises (GitHub)</a> · <a class="reference external" href="https://neurostars.org/c/abcd-repronim/232">Neurostars forum</a> · <a class="reference external" href="https://abcd-repronim.github.io/ABCDReproNim-Hackathon-2027">2027 Hackathon</a></p></li>
+<li><p><strong>DEAP video tutorial</strong> (DAIRC, ~55 min): <a class="reference external" href="https://www.youtube.com/watch?v=8vtRpUHxxWU">youtube.com/watch?v=8vtRpUHxxWU</a>, the walkthrough embedded in the official DEAP docs</p></li>
+<li><p><strong>Official docs &amp; vignettes</strong>: <a class="reference external" href="https://docs.abcdstudy.org/latest/">ABCD docs</a>, <a class="reference external" href="https://docs.deapscience.com">DEAP docs</a>, NBDCtools/ABCDscores vignettes (above)</p></li>
+<li><p><strong>ABCD Study GitHub</strong>: <a class="reference external" href="https://github.com/ABCD-STUDY">github.com/ABCD-STUDY</a></p></li>
+<li><p><strong>More community tools, tutorials, and talks</strong>, sorted by which data release they work with: <a class="reference internal" href="../resources/abcd-specific.html"><span class="doc std std-doc">ABCD tools &amp; resources</span></a></p></li>
+<li><p><strong>Neurostars</strong> <a class="reference external" href="https://neurostars.org/tag/abcd/126"><code class="docutils literal notranslate"><span class="pre">abcd</span></code> tag</a>: Q&amp;A, mostly imaging. Older threads are NDA-era</p></li>
+<li><p><strong>Help</strong>: <a class="reference external" href="https://nbdc-datashare.lassoinformatics.com/help-center">NBDC Help Center</a> (requires DUC), <a class="reference external" href="mailto:nbdc&#37;&#52;&#48;mail&#46;nih&#46;gov">nbdc<span>&#64;</span>mail<span>&#46;</span>nih<span>&#46;</span>gov</a>, and our <a class="reference external" href="https://github.com/now-i-know-my-abcd/docs/discussions">Discussion Board</a></p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./abcd-data"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="downloading-data.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Downloading the data</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="disseminating.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Disseminating your work</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#finding-variables">1. Finding variables</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#deap-data-dictionary-ontology-explorer-official">DEAP Data Dictionary &amp; Ontology Explorer (official)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abcd-data-dictionary-semantic-search-community">ABCD Data Dictionary Semantic Search (community)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#building-analysis-datasets">2. Building analysis datasets</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nbdctools-r-official">NBDCtools (R, official)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#nbdctools-python-official">nbdctools (Python, official)</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#reading-parquet-directly">Reading Parquet directly</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#computing-summary-scores">3. Computing summary scores</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#abcdscores-r-official">ABCDscores (R, official)</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#analysis-in-deap">4. Analysis in DEAP</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#modeling-and-analysis-packages">5. Modeling and analysis packages</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#imaging-pipelines">6. Imaging pipelines</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#training-learning-resources">7. Training &amp; learning resources</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sana Ali, Clare McCann, Monica Thieu, Lucy Whitmore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

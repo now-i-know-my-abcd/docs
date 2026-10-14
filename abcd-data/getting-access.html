@@ -1,0 +1,728 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+    <title>Getting access: the Data Use Certification (DUC) &#8212; Now I Know My ABCD</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" href="../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/tabs.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script src="../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script src="../_static/tabs.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'abcd-data/getting-access';</script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Accessing the data: what’s where" href="accessing-data.html" />
+    <link rel="prev" title="Working with ABCD data: start here" href="overview.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../intro.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../_static/nikmabcd-logo.png" class="logo__image only-light" alt="Now I Know My ABCD - Home"/>
+    <script>document.write(`<img src="../_static/nikmabcd-logo.png" class="logo__image only-dark" alt="Now I Know My ABCD - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../intro.html">
+                    Now I Know My ABCD
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">General info</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../user-manual.html">User Manual</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://github.com/now-i-know-my-abcd/docs/discussions">ABCD Discussion Board</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing.html">How to contribute</a></li>
+
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Working with ABCD data</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../starting.html">Getting started with ABCD: quick start</a></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="overview.html">Working with ABCD data: start here</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Getting access: the Data Use Certification (DUC)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accessing-data.html">Accessing the data: what’s where</a></li>
+<li class="toctree-l2"><a class="reference internal" href="downloading-data.html">Downloading the data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="working-with-data.html">Working with the data: tools &amp; packages</a></li>
+<li class="toctree-l2"><a class="reference internal" href="disseminating.html">Disseminating your work</a></li>
+<li class="toctree-l2"><a class="reference internal" href="best-practices.html">Best-practice guides (peer-reviewed reading list)</a></li>
+</ul>
+</details></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../resources/abcd-specific.html">ABCD tools &amp; resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/computing.html">Scientific computing &amp; methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/statistics.html">Statistics</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../resources/science.html">Domain-specific resources</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Methods tutorials</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../visualization.html">Visualization tips</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">News</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../news.html">ABCD news &amp; new papers</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/now-i-know-my-abcd/docs/issues/new?title=Issue%20on%20page%20%2Fabcd-data/getting-access.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../_sources/abcd-data/getting-access.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Getting access: the Data Use Certification (DUC)</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#who-can-apply">Who can apply?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-vs-group-ducs-read-this-if-you-re-a-trainee">Individual vs. group DUCs (read this if you’re a trainee)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step">Step by step</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renewal-changes-and-expiration">Renewal, changes, and expiration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-cases">Special cases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-rules-from-the-duc">Key rules from the DUC</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#official-links">Official links</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="getting-access-the-data-use-certification-duc">
+<h1>Getting access: the Data Use Certification (DUC)<a class="headerlink" href="#getting-access-the-data-use-certification-duc" title="Permalink to this heading">#</a></h1>
+<p><em>Last reviewed: October 2026. Official source: <a class="reference external" href="https://www.nbdc-datahub.org/data-access-process">NBDC Data Access Process</a> and <a class="reference external" href="https://www.nbdc-datahub.org/faqs">NBDC FAQs</a>.</em></p>
+<p>To use ABCD data you need an approved <strong>Data Use Certification (DUC)</strong> from the <strong>NIH Brain Development Cohorts (NBDC) Data Hub</strong>. Access is free, but it takes paperwork, a signature from your institution, and a short training.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Coming from the NDA?</strong> The NIMH Data Archive (NDA) stopped accepting new and renewal ABCD requests on <strong>June 2, 2025</strong>. An existing NDA DUC still covers release 5.1 and earlier until it expires. After that, you need a new NBDC DUC, and any data you downloaded under the NDA DUC must be deleted. Releases 6.0 and later are <strong>only</strong> on NBDC. (<a class="reference external" href="https://abcdstudy.org/scientists/data-sharing/">abcdstudy.org data sharing</a>)</p>
+</div>
+<section id="who-can-apply">
+<h2>Who can apply?<a class="headerlink" href="#who-can-apply" title="Permalink to this heading">#</a></h2>
+<p>You need:</p>
+<ul class="simple">
+<li><p>a research need for the data,</p></li>
+<li><p>an affiliation with an NIH-recognized institution that has an active <strong>Federalwide Assurance (FWA)</strong>,</p></li>
+<li><p>approval from your institution’s <strong>Signing Official (SO)</strong>. Not sure who that is? Ask your research/sponsored-programs office, or see <a class="reference external" href="https://www.era.nih.gov/erahelp/commons/commons/roles/SO.htm">eRA’s SO role description</a>.</p></li>
+<li><p>a computing environment that meets <strong>NIST SP 800-171</strong> (or ISO/IEC 27001/27002) security requirements. Talk to your IT/security office. NBDC has announced a <strong>non-NIST workflow</strong> with compute-in-place in a secure NBDC environment. As of this review it was expected in <strong>Fall 2026</strong>, so check the <a class="reference external" href="https://abcdstudy.org/scientists/data-sharing/">abcdstudy.org data-sharing page</a> for status.</p></li>
+</ul>
+<p>International researchers are eligible if their institution has an active FWA (<a class="reference external" href="https://docs.abcdstudy.org/latest/info/faq.html">ABCD FAQ</a>).</p>
+</section>
+<section id="individual-vs-group-ducs-read-this-if-you-re-a-trainee">
+<h2>Individual vs. group DUCs (read this if you’re a trainee)<a class="headerlink" href="#individual-vs-group-ducs-read-this-if-you-re-a-trainee" title="Permalink to this heading">#</a></h2>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p></p></th>
+<th class="head"><p>Individual DUC</p></th>
+<th class="head"><p>Investigator-led group DUC</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Who</p></td>
+<td><p>One researcher</p></td>
+<td><p>A Lead PI plus named people at the <strong>same institution</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>Trainees</p></td>
+<td><p>Not allowed</p></td>
+<td><p><strong>Trainees must be on a group DUC</strong></p></td>
+</tr>
+<tr class="row-even"><td><p>Notes</p></td>
+<td><p></p></td>
+<td><p>Adding people requires the SO to re-sign; added members can’t download until the Lead PI has passed training</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>A person can be listed on <strong>only one DUC</strong>. If you’re a student or postdoc, your first step is to ask your PI whether the lab already has (or will create) a group DUC, and to be added to it.</p>
+</section>
+<section id="step-by-step">
+<h2>Step by step<a class="headerlink" href="#step-by-step" title="Permalink to this heading">#</a></h2>
+<p>Requests are made in the DUC module of the <a class="reference external" href="https://nbdc-datashare.lassoinformatics.com/duc">NBDC Data Access Platform</a>.</p>
+<ol class="arabic">
+<li><p><strong>Sign in</strong> through RAS using your <strong>institutional email address</strong>. The applicant, all people listed on the DUC, and the SO must use emails from the same institution. Personal emails (e.g., Gmail) are generally blocked.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The system treats each <em>email + login provider</em> combination (e.g., <a class="reference external" href="http://Login.gov">Login.gov</a> vs. <a class="reference external" href="http://ID.me">ID.me</a>) as a separate user. Always sign in the same way, or you may appear to “lose” your access. (<a class="reference external" href="https://www.nbdc-datahub.org/faqs">NBDC FAQs</a>)</p>
+</div>
+</li>
+<li><p><strong>Form 1, Lead recipient information.</strong></p></li>
+<li><p><strong>Form 2, Research Data Use Statement</strong> (max 250 words). Describe the scientific purpose, the data domains you’ll use, how you’ll manage the data, and how you’ll delete it at the end. <em>Tip: write it broadly enough to cover the projects you realistically plan this year, but concretely enough that a reviewer understands what you’ll do.</em></p></li>
+<li><p><strong>Form 3, Security attestation.</strong> Confirm NIST SP 800-171 (or ISO 27001/27002) compliance.</p></li>
+<li><p><strong>Form 4, Signing Official.</strong> Give the SO’s name and email. For group DUCs, list team members’ names and institutional emails here.</p></li>
+<li><p><strong>DocuSign.</strong> You sign, then your SO signs and confirms NIST compliance.</p></li>
+<li><p><strong>Review</strong> by the NBDC Data Access Committee (DAC). No official turnaround time is published, so build in buffer time before deadlines.</p></li>
+<li><p><strong>Training.</strong> After approval you’ll get an email for the <strong>NBDC Responsible Data and Biospecimen Use Training</strong>. You must score <strong>≥ 90%</strong> on the quiz (retakes allowed). The slides are available as a <a class="reference external" href="https://cdn.prod.website-files.com/672cec1c3c6a5c9ee60d1184/69c53b356eb881f7f483fff4_NBDC%20Responsible%20Data%20and%20Biospecimen%20Use%20Training%20v1.2.0.pdf">PDF (v1.2.0)</a>.</p></li>
+</ol>
+<p>Once approved and trained, you can use DEAP, the Data Access Platform, the Sandbox, and Globus downloads (see <a class="reference internal" href="accessing-data.html"><span class="doc std std-doc">Accessing the data</span></a>).</p>
+</section>
+<section id="renewal-changes-and-expiration">
+<h2>Renewal, changes, and expiration<a class="headerlink" href="#renewal-changes-and-expiration" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>Duration:</strong> one year from approval. Training must also be renewed yearly.</p></li>
+<li><p><strong>Renewal</strong> opens 3 months before expiration and requires a <strong>Progress Report</strong> listing your publications, presentations, and other outputs, so <strong>keep a running list</strong> as you go. Reminder emails come at 1 month, 1 week, and 3, 2, and 1 day(s) before expiration.</p></li>
+<li><p><strong>If it lapses</strong> before you submit a renewal, access is suspended and you must file a <em>new</em> request.</p></li>
+<li><p><strong>Changing institutions:</strong> DUCs don’t transfer. Email <a class="reference external" href="mailto:nbdc&#37;&#52;&#48;mail&#46;nih&#46;gov">nbdc<span>&#64;</span>mail<span>&#46;</span>nih<span>&#46;</span>gov</a> and submit a new DUC at the new institution. A group DUC can name a replacement Lead PI.</p></li>
+<li><p><strong>When the project ends or the DUC expires</strong> (whichever comes first): permanently delete downloaded data (DUC §12).</p></li>
+</ul>
+</section>
+<section id="special-cases">
+<h2>Special cases<a class="headerlink" href="#special-cases" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>American Indian/Alaska Native (AI/AN) data.</strong> If you will report results for AI/AN participants <strong>separately</strong> (in presentations, preprints, publications, website posts), you need an additional <strong>A-DUC</strong>. It’s requested after your main DUC and expires with it. Including AI/AN counts in a demographics table doesn’t require one. (<a class="reference external" href="https://www.nbdc-datahub.org/faqs">NBDC FAQs</a>)</p></li>
+<li><p><strong>Biospecimens</strong> are requested separately through the <a class="reference external" href="https://nbdc-biobank.nida.nih.gov/">NBDC Biobank Portal</a>.</p></li>
+<li><p><strong>HBCD.</strong> The NBDC DUC text covers the NIH Brain Development Cohorts, including both ABCD and HBCD.</p></li>
+<li><p><strong>Exploring before you’re approved.</strong> You can browse the data dictionary in <a class="reference external" href="https://abcd.deapscience.com">DEAP</a> and use the <a class="reference internal" href="working-with-data.html"><span class="doc std std-doc">semantic search tool</span></a> without a DUC.</p></li>
+</ul>
+</section>
+<section id="key-rules-from-the-duc">
+<h2>Key rules from the DUC<a class="headerlink" href="#key-rules-from-the-duc" title="Permalink to this heading">#</a></h2>
+<p>These are summarized from the <a class="reference external" href="https://cdn.prod.website-files.com/672cec1c3c6a5c9ee60d1184/6852ddf2295f4c148cf4ffeb_General%20Group%20v1.0.0%20.pdf">General Group DUC v1.0.0</a>. <strong>Read the full text yourself</strong>, because this is not legal advice and the DUC was under revision in 2026.</p>
+<div class="pst-scrollable-table-container"><table class="table">
+<thead>
+<tr class="row-odd"><th class="head"><p>Rule</p></th>
+<th class="head"><p>What it means in practice</p></th>
+<th class="head"><p>DUC §</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>No redistribution</p></td>
+<td><p>Don’t share raw <strong>or derived individual-level</strong> data with anyone not on your DUC, and <strong>don’t put ABCD data into large language models / generative AI tools</strong> (e.g., ChatGPT).</p></td>
+<td><p>4</p></td>
+</tr>
+<tr class="row-odd"><td><p>Collaborators</p></td>
+<td><p>You may share with authorized users at your institution. Collaborators at other institutions need their own access and must use NBDC’s secure-sharing mechanism. You may <em>display</em> (not hand out) individual-level data for teaching.</p></td>
+<td><p>5</p></td>
+</tr>
+<tr class="row-even"><td><p>No re-identification</p></td>
+<td><p>Never attempt to identify or contact participants. <strong>Minimum cell size of 10</strong> in all public reporting (papers, posters, talks).</p></td>
+<td><p>6</p></td>
+</tr>
+<tr class="row-odd"><td><p>Stigmatization</p></td>
+<td><p>Don’t use the data to stigmatize individuals or groups.</p></td>
+<td><p>8</p></td>
+</tr>
+<tr class="row-even"><td><p>Security</p></td>
+<td><p>No shared accounts, no internet-exposed storage, encryption, patched software, NIST 800-171. Report breaches to NIH within <strong>24 hours</strong>.</p></td>
+<td><p>2, 11</p></td>
+</tr>
+<tr class="row-odd"><td><p>Destruction</p></td>
+<td><p>Delete downloaded data when research ends or the DUC expires. Storing data on the platform instead of downloading is encouraged.</p></td>
+<td><p>12–13</p></td>
+</tr>
+<tr class="row-even"><td><p>Preregistration</p></td>
+<td><p>Strongly encouraged (e.g., OSF) before analysis.</p></td>
+<td><p>15</p></td>
+</tr>
+<tr class="row-odd"><td><p>Publications</p></td>
+<td><p>Register publications with NBDC once they have a DOI/PMID; share code (encouraged).</p></td>
+<td><p>16</p></td>
+</tr>
+<tr class="row-even"><td><p>Acknowledgment</p></td>
+<td><p>Cite the release DOI and use the acknowledgment statement. See <a class="reference internal" href="disseminating.html"><span class="doc std std-doc">Disseminating your work</span></a>.</p></td>
+<td><p>17</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<p>Also see NIH’s <a class="reference external" href="https://sharing.nih.gov/sites/default/files/flmngr/NIH-Security-BPs-for-Users-of-Controlled-Access-Data.pdf">Security Best Practices for Users of Controlled-Access Data</a>.</p>
+</section>
+<section id="official-links">
+<h2>Official links<a class="headerlink" href="#official-links" title="Permalink to this heading">#</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://www.nbdc-datahub.org/data-access-process">NBDC Data Access Process</a> (with DUC and A-DUC templates)</p></li>
+<li><p><a class="reference external" href="https://www.nbdc-datahub.org/faqs">NBDC FAQs</a> · <a class="reference external" href="https://docs.abcdstudy.org/latest/info/faq.html">ABCD docs FAQ</a> · <a class="reference external" href="https://docs.abcdstudy.org/latest/usage/access.html">ABCD docs: Access</a></p></li>
+<li><p>DUC templates: <a class="reference external" href="https://cdn.prod.website-files.com/672cec1c3c6a5c9ee60d1184/6852ddf2295f4c148cf4ffeb_General%20Group%20v1.0.0%20.pdf">Group v1.0.0</a> · <a class="reference external" href="https://cdn.prod.website-files.com/672cec1c3c6a5c9ee60d1184/6852ddeaf0589dda767af337_General%20Individual%20v1.0.0.pdf">Individual v1.0.0</a> · <a class="reference external" href="https://cdn.prod.website-files.com/672cec1c3c6a5c9ee60d1184/6a199c114163b9c9a7fb8a8f_Data%20Use%20Certification_General%20Group_V3_RENEWAL.docx.pdf">Group renewal V3</a></p></li>
+<li><p><a class="reference external" href="https://abcdstudy.org/wp-content/uploads/2025/03/NIST-Update_030525.pdf">NIST requirement summary (ABCD, March 2025)</a></p></li>
+<li><p>Help: <strong><a class="reference external" href="mailto:nbdc&#37;&#52;&#48;mail&#46;nih&#46;gov">nbdc<span>&#64;</span>mail<span>&#46;</span>nih<span>&#46;</span>gov</a></strong> · <a class="reference external" href="https://nbdc-datashare.lassoinformatics.com/help-center">Help Center</a> (requires approved DUC) · <a class="reference external" href="https://nbdc.lassoinformatics.com/issue-tracker">Issue tracker</a></p></li>
+</ul>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+Archived: the old NDA access process (release 5.1 and earlier)<div class="sd-summary-down docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-down" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M5.22 8.72a.75.75 0 000 1.06l6.25 6.25a.75.75 0 001.06 0l6.25-6.25a.75.75 0 00-1.06-1.06L12 14.44 6.28 8.72a.75.75 0 00-1.06 0z"></path></svg></div>
+<div class="sd-summary-up docutils">
+<svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-up" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M18.78 15.28a.75.75 0 000-1.06l-6.25-6.25a.75.75 0 00-1.06 0l-6.25 6.25a.75.75 0 101.06 1.06L12 9.56l5.72 5.72a.75.75 0 001.06 0z"></path></svg></div>
+</summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text">These instructions applied when ABCD was distributed through the NIMH Data Archive. They’re kept for reference only and <strong>no longer apply to new requests</strong>.</p>
+<ul class="simple">
+<li><p class="sd-card-text">ABCD-ReproNim <a class="reference external" href="https://docs.google.com/document/d/18hsT2x15bypuXFcfMQb9Ck_YEB7VvY2j4w5hwbV78A4/edit">guide to requesting NDA accounts and a DUC</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://nda.nih.gov/about/creating-an-nda-account">NIH instructions for NDA accounts</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://abcdworkshop.github.io/slides/ResponsibleABCD.pdf">2021 MDC ABCD Workshop: Responsible use of ABCD (slides)</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://s3.amazonaws.com/nda.nih.gov/Documents/NDA+Data+Access+Request+DUC+FINAL.pdf">NDA Data Access Request DUC (full text)</a></p></li>
+<li><p class="sd-card-text">NDA studies: <a class="reference external" href="https://nda.nih.gov/training/module?trainingModuleId=training.study&amp;slideId=slide.study.intro">tutorial</a> · <a class="reference external" href="https://nda.nih.gov/get/manuscript-preparation.html">steps</a></p></li>
+<li><p class="sd-card-text"><a class="reference external" href="https://github.com/now-i-know-my-abcd/docs/files/9284755/How.to.Download.ABCD.Data.pdf">How to Download ABCD Data (NDA era, PDF)</a></p></li>
+</ul>
+</div>
+</details></section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./abcd-data"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="overview.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Working with ABCD data: start here</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="accessing-data.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Accessing the data: what’s where</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#who-can-apply">Who can apply?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#individual-vs-group-ducs-read-this-if-you-re-a-trainee">Individual vs. group DUCs (read this if you’re a trainee)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-by-step">Step by step</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#renewal-changes-and-expiration">Renewal, changes, and expiration</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#special-cases">Special cases</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#key-rules-from-the-duc">Key rules from the DUC</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#official-links">Official links</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Sana Ali, Clare McCann, Monica Thieu, Lucy Whitmore
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2022.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div id="google_translate_element"></div>
+
+<script type="text/javascript">
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+}
+</script>
+
+<script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>

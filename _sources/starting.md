@@ -1,26 +1,16 @@
-# Getting Started with ABCD
+# Getting started with ABCD: quick start
 
-ABCD access requests have changed with the release of ABCD 6.0! To work with ABCD data, you'll need an approved Data Use Certification. Requests are now managed through the new NIH Brain Development Cohorts (NBDC) platform. A guide to data access can be found [here](https://www.nbdc-datahub.org/data-access-process). 
+*Last reviewed: October 2026 (ABCD Release 7.0).*
 
+The short version. Each step links to a detailed page in [Working with ABCD data](abcd-data/overview.md).
 
+1. **Explore without access.** Browse variables in the [DEAP data dictionary](https://abcd.deapscience.com) or the plain-language [ABCD semantic search](https://beepboopstats.com/abcd-dictionary) tool. → [Working with the data](abcd-data/working-with-data.md)
+2. **Get a Data Use Certification (DUC)** through the [NBDC Data Hub](https://www.nbdc-datahub.org/data-access-process). Trainees join their PI's group DUC, then pass the NBDC responsible-use training. → [Getting access](abcd-data/getting-access.md)
+3. **Pick a release** (currently 7.0, [DOI 10.82525/8f3w-5260](https://doi.org/10.82525/8f3w-5260)) and learn the 6.0+ naming scheme (`sub-*`, `ses-00A`, new variable names). → [Accessing the data](abcd-data/accessing-data.md)
+4. **Get the data:** DEAP for tabulated data, Globus for full releases and imaging, or the NBDC Sandbox to avoid downloading. → [Downloading the data](abcd-data/downloading-data.md)
+5. **Analyze** with NBDCtools / nbdctools, ABCDscores, and models that account for family, site, and repeated measures. → [Working with the data](abcd-data/working-with-data.md) · [Best-practice guides](abcd-data/best-practices.md)
+6. **Share responsibly:** cite the release DOI, include the acknowledgment, keep all cells ≥ 10, never share individual-level data or paste it into AI tools, and share your code. → [Disseminating your work](abcd-data/disseminating.md)
 
-
-## Archived Instructions - Accessing the NDA & getting an approved DUC:
-To work with ABCD data, you’ll need a few things: access to the National Data Archive (NDA), and an approved Data Use Certification (DUC). As a recent update, renewing DUCs will now require creating and registering an NDA study.
-
-The ABCD Repro-Nim Workshop has a [guide](https://docs.google.com/document/d/18hsT2x15bypuXFcfMQb9Ck_YEB7VvY2j4w5hwbV78A4/edit) to requesting NDA user accounts and obtaining a DUC.  
-
-For the official NIH instructions for accessing the National Data Archive (NDA), see [NIH Instructions for NDA access](https://nda.nih.gov/about/creating-an-nda-account)
-
-For an overview of the DUC and responsible data use guidelines, see: [2021 MDC ABCD Workshop](https://abcdworkshop.github.io/slides/ResponsibleABCD.pdf). 
-
-For the full text of the Data Use Certification (DUC), see [here](https://s3.amazonaws.com/nda.nih.gov/Documents/NDA+Data+Access+Request+DUC+FINAL.pdf)
-
-For information on creating NDA studies:
-
-- [Tutorial](https://nda.nih.gov/training/module?trainingModuleId=training.study&slideId=slide.study.intro)
-
-- [Steps](https://nda.nih.gov/get/manuscript-preparation.html)
-
-For information on how to download ABCD data, see: [How to Download ABCD Data.pdf](https://github.com/now-i-know-my-abcd/docs/files/9284755/How.to.Download.ABCD.Data.pdf)
-
+```{note}
+ABCD moved from the NIMH Data Archive (NDA) to the NIH Brain Development Cohorts (NBDC) Data Hub with Release 6.0 (2025). The old NDA-era instructions are archived at the bottom of [Getting access](abcd-data/getting-access.md).
+```
