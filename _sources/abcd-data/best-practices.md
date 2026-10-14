@@ -21,13 +21,22 @@ An annotated reading list of practical, mostly peer-reviewed guides for working 
 | Cardenas-Iniguez, C., & Gonzalez, M. R. (2024). Recommendations for the responsible use and communication of race and ethnicity in neuroimaging research. *Nature Neuroscience*. [doi:10.1038/s41593-024-01608-4](https://doi.org/10.1038/s41593-024-01608-4) | How (and whether) to include race/ethnicity variables, and how to write about them. |
 | Gonzalez, M. R., et al. (2025). Responsible research in health disparities using the ABCD study. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2024.101497](https://doi.org/10.1016/j.dcn.2024.101497) | Social-determinants-of-health framework for disparities research in ABCD. |
 
-See also the race/ethnicity and social-determinants resources on the [Domain-specific resources](../resources/science.md) page.
+**Further reading on race, racism, and social determinants of health:**
+
+- Vyas, D. A., et al. (2020). Hidden in plain sight: Reconsidering the use of race correction in clinical algorithms. *New England Journal of Medicine*. [doi:10.1056/NEJMms2004740](https://doi.org/10.1056/NEJMms2004740)
+- Alvidrez, J., et al. (2019). The National Institute on Minority Health and Health Disparities Research Framework. *American Journal of Public Health*. [doi:10.2105/AJPH.2018.304883](https://doi.org/10.2105/AJPH.2018.304883)
+- Palmer, R. C., et al. (2019). Social determinants of health: Future directions for health disparities research. *American Journal of Public Health*. [doi:10.2105/AJPH.2019.304964](https://doi.org/10.2105/AJPH.2019.304964)
+- [APA Guidelines on Race and Ethnicity in Psychology](https://www.apa.org/about/policy/guidelines-race-ethnicity.pdf)
+- [Racism and mental health: Examining the link between racism and depression from a social cognitive perspective](https://psycnet.apa.org/record/2015-40803-006) (APA, 2015)
+- [Racism: Science & Tools for the Public Health Professional](https://ajph.aphapublications.org/doi/book/10.2105/9780875533049) (APHA Press)
+- [The Cost of Racism for People of Color: Contextualizing Experiences of Discrimination](https://www.apa.org/pubs/books/4317394) (APA Books)
 
 ## Study design, sampling, and weights
 
 | Paper | Why read it |
 |---|---|
 | Volkow, N. D., et al. (2018). The conception of the ABCD study: From substance use to a broad NIH collaboration. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2017.10.002](https://doi.org/10.1016/j.dcn.2017.10.002) | Why the study exists and what it was designed to answer. |
+| Karcher, N. R., & Barch, D. M. (2020). The ABCD study: Understanding the development of risk for mental and physical health outcomes. *Neuropsychopharmacology*. [doi:10.1038/s41386-020-0736-6](https://doi.org/10.1038/s41386-020-0736-6) | Overview of the study and early findings on mental and physical health risk. |
 | Garavan, H., et al. (2018). Recruiting the ABCD sample: Design considerations and procedures. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2018.04.004](https://doi.org/10.1016/j.dcn.2018.04.004) | School-based sampling, sites, and twins: the basis for modeling nesting and weights. |
 | Barch, D. M., et al. (2018). Demographic, physical and mental health assessments in the ABCD study. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2017.10.010](https://doi.org/10.1016/j.dcn.2017.10.010) | Rationale for the core non-imaging measures. |
 | Heeringa, S. G., & Berglund, P. A. (2020). A guide for population-based analysis of the ABCD Study baseline data. *bioRxiv* (preprint). [doi:10.1101/2020.02.10.942011](https://doi.org/10.1101/2020.02.10.942011) | How the ACS-raked propensity weights were built and when to use them. |
@@ -40,6 +49,9 @@ See also the race/ethnicity and social-determinants resources on the [Domain-spe
 |---|---|
 | Hawes, S. W., et al. (2025). Longitudinal analysis of the ABCD® study. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2025.101518](https://doi.org/10.1016/j.dcn.2025.101518) | ABCD-specific guide to longitudinal models. |
 | McCormick, E. M., et al. (2023). The Hitchhiker's guide to longitudinal models: A primer on model selection for repeated-measures methods. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2023.101281](https://doi.org/10.1016/j.dcn.2023.101281) | General primer on choosing a longitudinal model, with a code companion. |
+| King, K. M., et al. (2018). Longitudinal modeling in developmental neuroimaging research: Common challenges, and solutions from developmental psychology. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2017.11.009](https://doi.org/10.1016/j.dcn.2017.11.009) | Classic guide to the pitfalls of modeling change with brain data. |
+| Flournoy, J. C., et al. (2020). Improving practices and inferences in developmental cognitive neuroscience. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2020.100807](https://doi.org/10.1016/j.dcn.2020.100807) | Concrete recommendations for inference in developmental neuroscience. |
+| Zacharek, S. J., et al. (2021). Leveraging big data to map neurodevelopmental trajectories in pediatric anxiety. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2021.100974](https://doi.org/10.1016/j.dcn.2021.100974) | What large datasets like ABCD can and can't tell us about developmental trajectories. |
 | Li, et al. (2025). Missing data approaches for longitudinal neuroimaging research: Examples from the ABCD Study®. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2025.101563](https://doi.org/10.1016/j.dcn.2025.101563) | Alternatives to listwise deletion, demonstrated on ABCD. |
 | Thompson, W. K., et al. (2019). The structure of cognition in 9 and 10 year-old children and associations with problem behaviors: Findings from the ABCD study's baseline neurocognitive battery. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2018.12.004](https://doi.org/10.1016/j.dcn.2018.12.004) | Worked example of mixed models with site and family random effects. |
 | Smith, D. M., et al. (2023). Heritability estimation of cognitive phenotypes in the ABCD Study® using mixed models. *Behavior Genetics*. [doi:10.1007/s10519-023-10141-2](https://doi.org/10.1007/s10519-023-10141-2) | Modeling family relatedness (twins, siblings). |
@@ -56,6 +68,10 @@ Also see the longitudinal-modeling and cross-lagged panel resources on the [Stat
 | Parekh, P., et al. (2024). FEMA: Fast and efficient mixed-effects algorithm for large sample whole-brain imaging data. *Human Brain Mapping*. [doi:10.1002/hbm.26579](https://doi.org/10.1002/hbm.26579) | The mixed-model engine behind DEAP analyses. |
 | Marek, S., et al. (2022). Reproducible brain-wide association studies require thousands of individuals. *Nature*. [doi:10.1038/s41586-022-04492-9](https://doi.org/10.1038/s41586-022-04492-9) | Sample size and replicability for brain–behavior associations. |
 | Kennedy, J. T., et al. (2022). Reliability and stability challenges in ABCD task fMRI data. *NeuroImage*. [doi:10.1016/j.neuroimage.2022.119046](https://doi.org/10.1016/j.neuroimage.2022.119046) | Read before using task-fMRI measures as individual-difference variables. |
+| Elliott, M. L., et al. (2020). What is the test-retest reliability of common task-functional MRI measures? New empirical evidence and a meta-analysis. *Psychological Science*. [doi:10.1177/0956797620916786](https://doi.org/10.1177/0956797620916786) | The broader evidence on task-fMRI reliability. |
+| Kragel, P. A., et al. (2020). fMRI can be highly reliable, but it depends on what you measure. *PsyArXiv* (preprint). [doi:10.31234/osf.io/9eaxk](https://doi.org/10.31234/osf.io/9eaxk) | A counterpoint: which fMRI measures *are* reliable. |
+| Chaarani, B., et al. (2021). Baseline brain function in the preadolescents of the ABCD Study. *Nature Neuroscience*. [doi:10.1038/s41593-021-00867-9](https://doi.org/10.1038/s41593-021-00867-9) | Reference description of the baseline task-fMRI data. |
+| Klapwijk, E. T., et al. (2021). Opportunities for increased reproducibility and replicability of developmental neuroimaging. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2020.100902](https://doi.org/10.1016/j.dcn.2020.100902) | Practical reproducibility steps for developmental imaging. |
 
 ## Puberty
 
@@ -63,6 +79,7 @@ Also see the longitudinal-modeling and cross-lagged panel resources on the [Stat
 |---|---|
 | Cheng, T. W., et al. (2021). A researcher's guide to the measurement and modeling of puberty in the ABCD Study® at baseline. *Frontiers in Endocrinology*. [doi:10.3389/fendo.2021.608575](https://doi.org/10.3389/fendo.2021.608575) | Practical guide to the puberty measures and how to model them. |
 | Herting, M. M., et al. (2021). Correspondence between perceived pubertal development and hormone levels in 9–10 year-olds from the ABCD Study. *Frontiers in Endocrinology*. [doi:10.3389/fendo.2020.549928](https://doi.org/10.3389/fendo.2020.549928) | How self/parent-report puberty relates to hormones. |
+| [Multi-method assessment of pubertal timing and associations with internalizing psychopathology in early adolescent girls](https://psyarxiv.com/p5vfb) (*PsyArXiv* preprint, 2020) | Comparing different ways to measure pubertal timing. |
 
 ## Official documentation worth reading end-to-end
 
