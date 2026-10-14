@@ -5,6 +5,12 @@ title: Now I Know My ABCD
 author: Sana Ali, Clare McCann, Monica Thieu, Lucy Whitmore
 logo: nikmabcd-logo.png
 
+# Retired pages kept in the repo for reference but not built
+# (Twitter feeds retired Oct 2026; see _toc.yml)
+exclude_patterns:
+  - recent_tweets.md
+  - old_tweets.md
+
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
 execute:
@@ -15,6 +21,9 @@ execute:
 sphinx:
   extra_extensions:
   - sphinx_inline_tabs
+  config:
+    # lets pages link to headings, e.g. getting-access.md#key-rules-from-the-duc
+    myst_heading_anchors: 3
 
 # Define the name of the latex output file for PDF builds
 latex:

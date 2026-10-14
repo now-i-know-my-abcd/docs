@@ -7,10 +7,20 @@ parts:
   - caption: General info
     chapters:
     - file: user-manual
-    - file: starting
     - url: https://github.com/now-i-know-my-abcd/docs/discussions
       title: ABCD Discussion Board
     - file: contributing
+  - caption: Working with ABCD data
+    chapters:
+    - file: starting
+    - file: abcd-data/overview
+      sections:
+      - file: abcd-data/getting-access
+      - file: abcd-data/accessing-data
+      - file: abcd-data/downloading-data
+      - file: abcd-data/working-with-data
+      - file: abcd-data/disseminating
+      - file: abcd-data/best-practices
   - caption: Resources
     chapters:
     - file: resources/abcd-specific
@@ -20,9 +30,9 @@ parts:
   - caption: Methods tutorials
     chapters:
     - file: visualization
-    - file: bug-reference
-  - caption: ABCD on Twitter
+  - caption: News
     chapters:
-    - file: recent_tweets
-    - file: old_tweets
+    # generated weekly by python/news/build_news.py (see deploy-book.yml);
+    # replaces the "ABCD on Twitter" pages retired Oct 2026
+    - file: news
 
