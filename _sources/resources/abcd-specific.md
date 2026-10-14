@@ -155,4 +155,4 @@ These were written for releases distributed through the NIMH Data Archive. **Acc
 ## See also
 
 - [Best-practice guides](../abcd-data/best-practices.md): peer-reviewed practical guides, including responsible use (Simmons et al., 2021) and the [official responsible-use guidance](https://docs.abcdstudy.org/latest/usage/responsible_use.html)
-- [Scientific computing](computing.md) and [Statistics](statistics.md) resources
+- [Methods & open-science toolkit](methods-toolkit.md): preregistration, reproducible workflows, covariates, nesting, longitudinal models, effect sizes, and machine learning
