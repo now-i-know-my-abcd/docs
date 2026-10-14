@@ -56,7 +56,7 @@ An annotated reading list of practical, mostly peer-reviewed guides for working 
 | Thompson, W. K., et al. (2019). The structure of cognition in 9 and 10 year-old children and associations with problem behaviors: Findings from the ABCD study's baseline neurocognitive battery. *Developmental Cognitive Neuroscience*. [doi:10.1016/j.dcn.2018.12.004](https://doi.org/10.1016/j.dcn.2018.12.004) | Worked example of mixed models with site and family random effects. |
 | Smith, D. M., et al. (2023). Heritability estimation of cognitive phenotypes in the ABCD Study® using mixed models. *Behavior Genetics*. [doi:10.1007/s10519-023-10141-2](https://doi.org/10.1007/s10519-023-10141-2) | Modeling family relatedness (twins, siblings). |
 
-Also see the longitudinal-modeling and cross-lagged panel resources on the [Statistics](../resources/statistics.md) page.
+For cross-lagged panel (RI-CLPM) and latent change score tutorials and code, see the [Methods & open-science toolkit](../resources/methods-toolkit.md).
 
 ## Neuroimaging
 
